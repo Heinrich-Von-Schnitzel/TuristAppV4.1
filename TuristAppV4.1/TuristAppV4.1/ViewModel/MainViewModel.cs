@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TuristAppV4.Model;
+﻿using System.Collections.ObjectModel;
+using TuristAppV4._1.Model;
 
-namespace TuristAppV4.ViewModel
+namespace TuristAppV4._1.ViewModel
 {
     internal class MainViewModel
     {
