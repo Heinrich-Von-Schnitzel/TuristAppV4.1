@@ -3,7 +3,7 @@ using TuristAppV4._1.Model;
 
 namespace TuristAppV4._1.ViewModel
 {
-    class OpretRestuarantHandler
+    class OpretRestaurantHandler
     {
         private string _restaurantNavn; // twoway bindes til textbox
         private string _bedømmelse;  // twoway bindes til textbox

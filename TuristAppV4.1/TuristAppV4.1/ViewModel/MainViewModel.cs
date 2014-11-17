@@ -1,7 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Windows.UI.Xaml.Controls;
 using TuristAppV4._1.Annotations;
+using TuristAppV4._1.Common;
 using TuristAppV4._1.Model;
 
 namespace TuristAppV4._1.ViewModel
@@ -13,6 +15,8 @@ namespace TuristAppV4._1.ViewModel
         private ObservableCollection<Restaurant> _observableCollectionOfRestuarants2;
         private ObservableCollection<Restaurant> _observableCollectionOfRestuarants3;
         private ObservableCollection<Katagori> _kategoriKatalog;
+        private string beskrivelse = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus, quam ut vestibulum mollis, urna augue blandit odio, a dignissim ante magna id lacus. Nullam porttitor id est eget elementum. Nunc ac tristique nibh. Sed nisi massa, aliquet at varius vitae, rhoncus eget odio.";
+        private RelayCommand _sletSelectedRestaurantCommand;
 
         public ObservableCollection<Katagori> KategoriKatalog
         {
@@ -43,14 +47,6 @@ namespace TuristAppV4._1.ViewModel
             set { _selectedRestaurant = value; }
         }
 
-        /*public static Restaurant SelectedRestaurant
-        {
-            get
-            {
-                return _selectedRestaurant;
-            }
-            set { _selectedRestaurant = value; }
-        }*/
 
         public void SletRestaurant()
         {
@@ -71,23 +67,32 @@ namespace TuristAppV4._1.ViewModel
                 }         
              }
         }
+        public RelayCommand SletSelectedRestaurantCommand
+        {
+            get { return _sletSelectedRestaurantCommand; }
+            set { _sletSelectedRestaurantCommand = value; }
+        }
+
 
         public MainViewModel()
         {
             ObservableCollectionOfRestuarants1 = new ObservableCollection<Restaurant>();
             ObservableCollectionOfRestuarants2 = new ObservableCollection<Restaurant>();
             ObservableCollectionOfRestuarants3 = new ObservableCollection<Restaurant>();
-            ObservableCollectionOfRestuarants1.Add(new Restaurant("McDonalds", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+            ObservableCollectionOfRestuarants1.Add(new Restaurant("McDonalds", "8", "http://www.mcdonalds.dk/", beskrivelse, "44 44 44 44", "../Assets/restaurant.jpeg"));
 
-            ObservableCollectionOfRestuarants2.Add(new Restaurant("Jensens Bøfshus", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+            ObservableCollectionOfRestuarants2.Add(new Restaurant("Jensens Bøfshus", "4", "http://www.jensens.com/", beskrivelse, "88 88 88 88", "../Assets/restaurant.jpeg"));
 
-            ObservableCollectionOfRestuarants3.Add(new Restaurant("Bone's", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
-            ObservableCollectionOfRestuarants3.Add(new Restaurant("Prindsen", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+            ObservableCollectionOfRestuarants3.Add(new Restaurant("Bone's", "7", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg"));
+            ObservableCollectionOfRestuarants3.Add(new Restaurant("Prindsen", "6", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg"));
 
             _kategoriKatalog = new ObservableCollection<Katagori>();
+
             _kategoriKatalog.Add(new Katagori("Fastfood"));
             _kategoriKatalog.Add(new Katagori("Familierestauranter"));
             _kategoriKatalog.Add(new Katagori("Fine restauranter"));
+
+            _sletSelectedRestaurantCommand = new RelayCommand(SletRestaurant);
         }
 
         #region INotifyPropertyChanged
