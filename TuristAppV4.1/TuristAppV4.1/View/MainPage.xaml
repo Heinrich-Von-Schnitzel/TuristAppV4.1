@@ -17,8 +17,6 @@
             <AppBarButton Icon="Delete" Label="Slet restaurant"/>
         </CommandBar>
     </Page.BottomAppBar>
-
-
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="ms-appx:///Assets/bg.png" Stretch="Fill"/>
