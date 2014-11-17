@@ -32,5 +32,10 @@ namespace TuristAppV4._1
         {
             this.Frame.Navigate(typeof(Restaurant));
         }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TilfoejRestaurant));
+        }
     }
 }

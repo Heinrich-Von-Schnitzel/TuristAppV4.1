@@ -121,6 +121,9 @@
     </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\TilfoejRestaurant.xaml.cs">
+      <DependentUpon>TilfoejRestaurant.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Restaurant.xaml.cs">
       <DependentUpon>Restaurant.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TilfoejRestaurant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Restaurant.xaml">
       <SubType>Designer</SubType>
