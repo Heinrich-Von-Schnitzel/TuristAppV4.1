@@ -1,6 +1,9 @@
-﻿namespace TuristAppV4._1.Model
+﻿using System.Collections.ObjectModel;
+using Windows.Networking.Sockets;
+
+namespace TuristAppV4._1.Model
 {
-    class Katagori
+    public class Katagori
     {
         private string _kategoriNavn;
 
@@ -13,6 +16,11 @@
         public Katagori(string kategoriNavn)
         {
             _kategoriNavn = kategoriNavn;
+        }
+
+        public override string ToString()
+        {
+            return  _kategoriNavn;
         }
     }
 }
