@@ -33,32 +33,35 @@
             <ColumnDefinition Width="456*"/>
             <ColumnDefinition Width="455*"/>
         </Grid.ColumnDefinitions>
-        <GridView Margin="50 0 0 80" Background="LightGray" Grid.Row="2">
+        <GridView Margin="50 0 0 80" Background="LightGray" Grid.Row="2" ItemsSource="{Binding ObservableCollectionOfRestuarants1}">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="Overskrift"/>
-                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="{Binding Billede}" Stretch="None" />
+                        <Border Background="black" Height="45" Opacity="0.8" />
+                        <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="0 -40 0 0" Text="{Binding RestaurantNavn}"/>
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <GridView Margin="20 0 20 80" Background="LightGray" Grid.Column="1" Grid.Row="2">
+        <GridView Margin="20 0 20 80" Background="LightGray" Grid.Column="1" Grid.Row="2" ItemsSource="{Binding ObservableCollectionOfRestuarants2}">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="Overskrift"/>
-                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="{Binding Billede}" Stretch="None" />
+                        <Border Background="black" Height="45" Opacity="0.8" />
+                        <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="0 -40 0 0" Text="{Binding RestaurantNavn}"/>
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <GridView Margin="0 0 50 80" Background="LightGray" Grid.Column="2" Grid.Row="2">
+        <GridView Margin="0 0 50 80" Background="LightGray" Grid.Column="2" Grid.Row="2" ItemsSource="{Binding ObservableCollectionOfRestuarants3}">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="Overskrift"/>
-                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="Billede" Stretch="None" />
+                        <Image HorizontalAlignment="Left" Height="200" Width="230" Source="{Binding Billede}" Stretch="None" />
+                        <Border Background="black" Height="45" Opacity="0.8" />
+                        <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="0 -40 0 0" Text="{Binding RestaurantNavn}"/>
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>
@@ -68,6 +71,14 @@
 			<Run Text=" - "/>
 			<Run FontStyle="Italic" FontSize="45" Text="Roskilde"/>
         </TextBlock>
-        <ListView Background="white" Margin="50,0,50,10" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <GridView SelectionMode="None" Background="white" Margin="50,0,50,10" Grid.ColumnSpan="3" Grid.Row="1" ItemsSource="{Binding KategoriKatalog, Mode=TwoWay}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Width="420" FontSize="30" Height="50" Text="{Binding KategoriNavn}" Foreground="black" IsHitTestVisible="False"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>

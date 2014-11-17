@@ -6,12 +6,19 @@ using TuristAppV4._1.Model;
 
 namespace TuristAppV4._1.ViewModel
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged
     {
-     private Restaurant _selectedRestaurant;
+        private static Restaurant _selectedRestaurant;
         private ObservableCollection<Restaurant> _observableCollectionOfRestuarants1;
         private ObservableCollection<Restaurant> _observableCollectionOfRestuarants2;
         private ObservableCollection<Restaurant> _observableCollectionOfRestuarants3;
+        private ObservableCollection<Katagori> _kategoriKatalog;
+
+        public ObservableCollection<Katagori> KategoriKatalog
+        {
+            get { return _kategoriKatalog; }
+            set { _kategoriKatalog = value; }
+        }
 
         public ObservableCollection<Restaurant> ObservableCollectionOfRestuarants1
         {
@@ -30,11 +37,20 @@ namespace TuristAppV4._1.ViewModel
             get { return _observableCollectionOfRestuarants3; }
             set { _observableCollectionOfRestuarants3 = value; }
         } 
-        public Restaurant SelectedRestaurant
+        public static Restaurant SelectedRestaurant
         {
             get { return _selectedRestaurant; }
-            set { _selectedRestaurant = value; OnPropertyChanged(); }
+            set { _selectedRestaurant = value; }
         }
+
+        /*public static Restaurant SelectedRestaurant
+        {
+            get
+            {
+                return _selectedRestaurant;
+            }
+            set { _selectedRestaurant = value; }
+        }*/
 
         public void SletRestaurant()
         {
@@ -61,9 +77,17 @@ namespace TuristAppV4._1.ViewModel
             ObservableCollectionOfRestuarants1 = new ObservableCollection<Restaurant>();
             ObservableCollectionOfRestuarants2 = new ObservableCollection<Restaurant>();
             ObservableCollectionOfRestuarants3 = new ObservableCollection<Restaurant>();
-            ObservableCollectionOfRestuarants1.Add(new Restaurant("testNavn", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon"));
-            ObservableCollectionOfRestuarants2.Add(new Restaurant("testNavn", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon"));
-            ObservableCollectionOfRestuarants3.Add(new Restaurant("testNavn", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon"));
+            ObservableCollectionOfRestuarants1.Add(new Restaurant("McDonalds", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+
+            ObservableCollectionOfRestuarants2.Add(new Restaurant("Jensens Bøfshus", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+
+            ObservableCollectionOfRestuarants3.Add(new Restaurant("Bone's", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+            ObservableCollectionOfRestuarants3.Add(new Restaurant("Prindsen", "testBedømmelse", "testHjemmeside", "testBeskrivelse", "testTelefon", "../Assets/restaurant.jpeg"));
+
+            _kategoriKatalog = new ObservableCollection<Katagori>();
+            _kategoriKatalog.Add(new Katagori("Fastfood"));
+            _kategoriKatalog.Add(new Katagori("Familierestauranter"));
+            _kategoriKatalog.Add(new Katagori("Fine restauranter"));
         }
 
         #region INotifyPropertyChanged

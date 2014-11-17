@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using TuristAppV4._1.View;
 
 namespace TuristAppV4._1
 {
@@ -29,7 +30,7 @@ namespace TuristAppV4._1
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Restaurant));
         }
     }
 }
