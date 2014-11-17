@@ -28,7 +28,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="455*"/>
-            <ColumnDefinition Width="456*"/>
+            <ColumnDefinition Width="455*"/>
             <ColumnDefinition Width="455*"/>
         </Grid.ColumnDefinitions>
         <GridView Margin="50 0 0 80" Grid.Row="2" ItemsSource="{Binding ObservableCollectionOfRestuarants1}" SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}">
