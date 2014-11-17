@@ -6,12 +6,12 @@ namespace TuristAppV4._1.ViewModel
     class OpretRestaurantHandler
     {
         private string _restaurantNavn; // twoway bindes til textbox
-        private string _bedømmelse;  // twoway bindes til textbox
-        private string _hjemmeside;   // twoway bindes til textbox
-        private string _beskrivelse;   // twoway bindes til textbox
-        private string _telefon;   // twoway bindes til textbox
-        private string _billede;
-        private MainViewModel _reference = new MainViewModel(); //reference til collection
+        private string _bedømmelse; // twoway bindes til textbox
+        private string _hjemmeside; // twoway bindes til textbox
+        private string _beskrivelse; // twoway bindes til textbox
+        private string _telefon; // twoway bindes til textbox
+        private string _billede; 
+        private MainViewModel _reference = new MainViewModel(); // reference til collection
 
 
         public void OpretRestaurantKategori1(ObservableCollection<Restaurant> observableCollection)
