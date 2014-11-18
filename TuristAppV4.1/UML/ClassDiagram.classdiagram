@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="293fdfdd-3181-44ed-9363-f864635fc880">
+      <profileInstance Id="74e54652-4dce-4243-b199-b9b7dcf83e08" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="355d3ee0-e504-42ef-b4f7-ca225aef4c04">
+      <profileInstance Id="7162df83-c951-46c9-ae68-55d77528844f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="039988e3-8c86-47e0-a096-5c0b1a6f817d" name="ObserableCollection" isAbstract="false" isLeaf="false" cachedFullName="ObserableCollection">
@@ -223,6 +237,12 @@
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
+                <property Id="b07d6ba3-81e1-4d0f-b427-bed7f3900172" name="Billede" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="478eb325-ab12-4e50-9509-c8b57d16218c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="15fbc77d-f833-466e-95a0-100b0327db0e" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
                 <operation Id="202a5e6c-00fa-413c-a23a-8108feefba3a" name="OpretRestaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -300,6 +320,12 @@
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
+                <property Id="ddd86618-9ee0-4647-9085-0260fea62763" name="Billede" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4623961d-5749-4865-a596-be1333090457" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
               </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
@@ -319,6 +345,11 @@
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="15fbc77d-f833-466e-95a0-100b0327db0e" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="5b94fc5c-bbef-488f-891a-60ab9d4881cf" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="317857f9-5e0a-421c-b2d2-9aac0ff8185c" name="UML">
     <elementDefinition Id="9aac7550-e19c-4c03-bd95-4b9cebc0c498" />
