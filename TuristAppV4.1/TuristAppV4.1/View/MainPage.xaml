@@ -37,7 +37,7 @@
                     <StackPanel>
                         <Image Height="180" Width="180" Source="{Binding Billede}" Stretch="Fill" />
                         <Border Height="50" Background="Black" Opacity="0.8">
-                          <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
+                            <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
                         </Border>
                     </StackPanel>
                 </DataTemplate>
@@ -49,7 +49,7 @@
                     <StackPanel>
                         <Image Height="180" Width="180" Source="{Binding Billede}" Stretch="Fill" />
                         <Border Height="50" Background="Black" Opacity="0.8">
-                          <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
+                            <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
                         </Border>
                     </StackPanel>
                 </DataTemplate>
@@ -61,23 +61,26 @@
                     <StackPanel>
                         <Image Height="180" Width="180" Source="{Binding Billede}" Stretch="Fill" />
                         <Border Height="50" Background="Black" Opacity="0.8">
-                          <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
+                            <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding RestaurantNavn}"/>
                         </Border>
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-      <TextBlock Height="70" Margin="50,0,0,0" VerticalAlignment="Bottom" FontSize="55" Foreground="white" HorizontalAlignment="Left">
+        <TextBlock Height="70" Margin="50,0,0,0" VerticalAlignment="Bottom" FontSize="55" Foreground="white" HorizontalAlignment="Left">
 			<Run Text="Eat Out"/>
 			<Run Text=" - "/>
 			<Run FontStyle="Italic" FontSize="45" Text="Roskilde"/>
-      </TextBlock>
-      <GridView SelectionMode="None" Margin="50,0,50,10" Grid.ColumnSpan="3" Grid.Row="1" ItemsSource="{Binding KategoriKatalog, Mode=TwoWay}">
+        </TextBlock>
+        <!--<GridView SelectionMode="None" Margin="50,0,50,10" Grid.ColumnSpan="3" Grid.Row="1" ItemsSource="{Binding KategoriKatalog, Mode=TwoWay}">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Width="600" FontSize="30" Height="50" Text="{Binding KategoriNavn}" Foreground="White"/>
                 </DataTemplate>
             </GridView.ItemTemplate>
-      </GridView>
+        </GridView>-->
+        <TextBlock Margin="50,15,0,0" Grid.Row="1" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[0].KategoriNavn}" />
+        <TextBlock Margin="25,15,0,0" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[1].KategoriNavn}" />
+        <TextBlock Margin="5,15,0,0" Grid.Row="1" Grid.Column="2" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[2].KategoriNavn}" />
     </Grid>
 </Page>

@@ -78,11 +78,26 @@
 
             <Button Content="Tilføj restaurant" Command="{Binding OpretRestaurantCommand}" Grid.Row="7" HorizontalAlignment="Stretch" Margin="40 10 40 5" VerticalAlignment="Stretch"/>
             <ListBox Width="300" ItemsSource="{Binding ObservableCollectionOfRestaurants2}" Grid.Row="8"/>
-            <ComboBox x:Name="comboBox1" SelectedItem="{Binding OpretRestaurantHandler.Bedømmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse">
-                <ComboBoxItem Name="cbi1">1</ComboBoxItem>
-                <ComboBoxItem Name="cbi2">2</ComboBoxItem>
-                <ComboBoxItem Name="cbi3">3</ComboBoxItem>
-            </ComboBox>
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <RadioButton GroupName="bedøm" Margin="40 10 10 10">
+                    <TextBlock>
+                        <Run Text="1"/>
+                        <Run Text="{Binding OpretRestaurantHandler.Bedømmelse}"/>
+                    </TextBlock>
+                </RadioButton>
+                <RadioButton GroupName="bedøm" Margin="5 10 10 10">
+                    <TextBlock>
+                        <Run Text="2"/>
+                        <Run Text="{Binding OpretRestaurantHandler.Bedømmelse}"/>
+                    </TextBlock>
+                </RadioButton>
+
+                <!--<ComboBox x:Name="comboBox1" SelectedItem="{Binding OpretRestaurantHandler.Bedømmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse">
+                    <ComboBoxItem Name="cbi1">1</ComboBoxItem>
+                    <ComboBoxItem Name="cbi2">2</ComboBoxItem>
+                    <ComboBoxItem Name="cbi3">3</ComboBoxItem>
+                </ComboBox>-->
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>
