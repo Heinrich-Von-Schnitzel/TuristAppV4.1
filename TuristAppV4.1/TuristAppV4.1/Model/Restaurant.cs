@@ -1,4 +1,6 @@
-﻿namespace TuristAppV4._1.Model
+﻿using System;
+
+namespace TuristAppV4._1.Model
 {
     public class Restaurant
     {
@@ -9,11 +11,29 @@
         private string _telefon;
         private string _billede;
 
+        public void CheckRestaurantNavn(string navn)
+        {
+            if (navn.Length < 2)
+            {
+                throw new ArgumentException("Navnet er for kort. Det skal være længere end 2 tegn");
+            }
+        }
+        public void CheckRestaurantTelefon(string telefon)
+        {
+            if (telefon.Length == 8)
+            {
+                throw new ArgumentException("Telefon nr. er for kort. Det skal være på 8 tegn");
+            }
+        }
 
         public string Telefon
         {
             get { return _telefon; }
-            set { _telefon = value; }
+            set
+            {
+                CheckRestaurantTelefon(value);
+                _telefon = value;
+            }
         }
 
         public string Beskrivelse
@@ -37,7 +57,11 @@
         public string RestaurantNavn
         {
             get { return _restaurantNavn; }
-            set { _restaurantNavn = value; }
+            set
+            {
+                CheckRestaurantNavn(value);
+                _restaurantNavn = value;
+            }
         }
         public string Billede
         {
@@ -57,7 +81,7 @@
 
         public override string ToString()
         {
-            return _restaurantNavn;
+            return _bedømmelse;
         }
     }
 }
