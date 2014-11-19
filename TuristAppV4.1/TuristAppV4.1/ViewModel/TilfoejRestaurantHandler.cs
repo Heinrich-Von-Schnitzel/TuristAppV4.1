@@ -6,7 +6,7 @@ using TuristAppV4._1.Model;
 
 namespace TuristAppV4._1.ViewModel
 {
-    public class OpretRestaurantHandler
+    public class TilfoejRestaurantHandler
     {
         private string _restaurantNavn; // twoway bindes til textbox
         private string _bedømmelse; // twoway bindes til textbox
@@ -16,7 +16,7 @@ namespace TuristAppV4._1.ViewModel
         private string _billede;
         private Katagori _selectedKategori;
 
-        public void OpretRestaurant()       
+        public void TilfoejRestaurant()       
         {
             Restaurant r = new Restaurant(_restaurantNavn, _bedømmelse, _hjemmeside, _beskrivelse, _telefon, "../Assets/restaurant.jpeg");
             SelectedKategori.ListeAfRestauranter.Add(r);
