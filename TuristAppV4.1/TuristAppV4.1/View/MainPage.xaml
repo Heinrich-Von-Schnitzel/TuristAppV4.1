@@ -14,7 +14,7 @@
         <CommandBar>
             <AppBarButton Icon="View" Label="Vælg restaurant" Click="AppBarButton_Click"/>
             <AppBarButton Icon="Add" Label="Tilføj restaurant" Click="AppBarButton_Click_1"/>
-            <AppBarButton Icon="Delete" Label="Slet restaurant" Command="{Binding SletSelectedRestaurantCommand}"/>
+            <AppBarButton Icon="Remove" Label="Slet restaurant" Command="{Binding SletSelectedRestaurantCommand}"/>
         </CommandBar>
     </Page.BottomAppBar>
     <Grid>

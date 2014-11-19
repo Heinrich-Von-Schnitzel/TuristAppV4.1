@@ -64,13 +64,11 @@ namespace TuristAppV4._1.ViewModel
             get { return _selectedRestaurant; }
             set { _selectedRestaurant = value; }
         }
-
        /* public Katagori SelectedKategori
         {
             get { return _selectedKategori; }
             set { _selectedKategori = value; }
         }*/
-
 
         public async void SletRestaurant()
         {

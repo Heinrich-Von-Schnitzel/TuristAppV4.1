@@ -21,7 +21,7 @@ namespace TuristAppV4._1.ViewModel
             Restaurant r = new Restaurant(_restaurantNavn, _bedømmelse, _hjemmeside, _beskrivelse, _telefon, "../Assets/restaurant.jpeg");
             SelectedKategori.ListeAfRestauranter.Add(r);
         }
-              public void CheckRestaurantNavn(string navn)
+        public void CheckRestaurantNavn(string navn)
         {
             if (String.IsNullOrEmpty(navn) || navn.Length >= 30)
             {

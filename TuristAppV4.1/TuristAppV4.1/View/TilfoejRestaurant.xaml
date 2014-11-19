@@ -76,7 +76,7 @@
 
             <ComboBox ItemsSource="{Binding KategoriKatalog}" SelectedItem="{Binding TilfoejRestaurantHandler.SelectedKategori, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="6"/>
 
-            <Button Content="Tilføj restaurant" Command="{Binding TilfoejRestaurantCommand}" Grid.Row="7" HorizontalAlignment="Stretch" Margin="40 10 40 5" VerticalAlignment="Stretch"/>
+            <Button Content="Tilføj restaurant" Command="{Binding TilfoejRestaurantCommand}" Grid.Row="7" HorizontalAlignment="Stretch" Margin="40 10 40 5" VerticalAlignment="Stretch" Background="#FF444444"/>
             <ListBox Width="300" ItemsSource="{Binding ObservableCollectionOfRestaurants2}" Grid.Row="8"/>
             <StackPanel Grid.Row="2" Orientation="Horizontal">
                 <RadioButton GroupName="bedøm" Margin="40 10 10 10">

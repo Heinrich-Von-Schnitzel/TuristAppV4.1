@@ -42,13 +42,6 @@
       <SubType>Content</SubType>
       <DependentUpon>SequenceDiagram.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="SystemSequenceDiagram.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SystemSequenceDiagram.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>SystemSequenceDiagram.sequencediagram</DependentUpon>
-    </Content>
     <Content Include="UseCase.usecasediagram">
       <SubType>Content</SubType>
     </Content>
