@@ -68,10 +68,16 @@
                 <ColumnDefinition Width="215*"/>
                 <ColumnDefinition Width="220*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" Text="{Binding SelectedRestaurant.Bedømmelse}" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20">
+                <Run Text="Bedømmelse: "/>
+                <Run Text="{Binding SelectedRestaurant.Bedømmelse}"/>
+            </TextBlock>
             <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding SelectedRestaurant.Beskrivelse}" FontSize="20" Grid.Row="1"/>
-            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" Text="{Binding SelectedRestaurant.Telefon}" FontSize="20" Grid.Row="2"/>
-            <HyperlinkButton Margin="20 0 0 0" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="{Binding SelectedRestaurant.Hjemmeside}" FontSize="20" Grid.Row="3"/>
+            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" FontSize="20" Grid.Row="2">
+                <Run Text="Telefonnummer: "/>
+                <Run Text="{Binding SelectedRestaurant.Telefon}"/>
+            </TextBlock>
+            <HyperlinkButton Margin="20 0 0 0" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="Besøg hjemmeside" FontSize="20" Grid.Row="3"/>
             <Image Source="{Binding SelectedRestaurant.Billede}" Grid.Column="1" Grid.RowSpan="5" Stretch="Fill" />
         </Grid>
     </Grid>
