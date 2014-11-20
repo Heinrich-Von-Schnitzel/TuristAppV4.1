@@ -21,7 +21,7 @@ namespace TuristAppV4._1Tests1.ViewModel
 
 
         [TestMethod]
-        public void TestRestaurantnavn()
+        public void TestName()
         {
             _handler.RestaurantNavn = "daniel";
             Assert.AreEqual("daniel", _handler.RestaurantNavn);
@@ -33,7 +33,7 @@ namespace TuristAppV4._1Tests1.ViewModel
             }
             catch (ArgumentException ex)
             {
-                Assert.AreEqual("Navnet er null eller tomt", ex.Message);
+                Assert.AreEqual("Restaurantnavnet er null eller tomt", ex.Message);
             }
         }
     }

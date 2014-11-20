@@ -85,7 +85,7 @@ namespace TuristAppV4._1.ViewModel
         {
             if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30)
             {
-                throw new ArgumentException("Navnet er null eller tomt");
+                throw new ArgumentException("Restaurantnavnet er null eller tomt");
             }
         }
         public async void CheckRestaurantTelefon(string telefon)
