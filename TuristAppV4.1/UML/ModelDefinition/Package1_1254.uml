@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="78e58e6e-fd43-4775-b548-3e76e5170275"
   name="Viewmodel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -94,7 +94,7 @@
         <ownedAttributesInternal>
           <property
             Id="04d2c11a-149f-4661-b8cd-eb96762960e0"
-            name="Kategori"
+            name="_kategoriKatalog"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -112,7 +112,7 @@
           </property>
           <property
             Id="357fb598-71cf-40d3-88eb-980d61167365"
-            name="Restaurant"
+            name="_kategori1"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -123,14 +123,14 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="20ae416b-2530-4de1-bbf3-c3780f64dc6c"
-                LastKnownName="ObserableCollection"
-                LastKnownLocation="UML.uml" />
+                Id="2bea1ebb-4155-49f4-aa34-e684461b26e4"
+                LastKnownName="ObserableCollection&lt;Restaurant&gt;"
+                LastKnownLocation="Package1_1254.uml" />
             </type_NamedElement>
           </property>
           <property
             Id="fcad6034-4520-4e75-91de-e85bb98e2400"
-            name="SelectedRestaurant"
+            name="_selectedRestaurant"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -139,6 +139,60 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="cf63af6c-6298-4de3-9160-9a767a5239ee"
+            name="_nrListe"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="50fa63f4-0b08-49d7-965d-d706524c5507"
+                LastKnownName="ObservableCollection&lt;string&gt;"
+                LastKnownLocation="Package1_1254.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e3c9b284-6fec-4f07-a9a8-6381ed1a2357"
+            name="_kategori2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2bea1ebb-4155-49f4-aa34-e684461b26e4"
+                LastKnownName="ObserableCollection&lt;Restaurant&gt;"
+                LastKnownLocation="Package1_1254.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="52c0d292-8dce-4aa3-aa1e-813336ac9599"
+            name="_kategori3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2bea1ebb-4155-49f4-aa34-e684461b26e4"
+                LastKnownName="ObserableCollection&lt;Restaurant&gt;"
+                LastKnownLocation="Package1_1254.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -394,8 +448,26 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="55cfae64-d8e0-4572-af10-1c4669ae7d0e"
+            name="SelectedKatagori"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="50fa63f4-0b08-49d7-965d-d706524c5507"
+        name="ObservableCollection&lt;string&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2bea1ebb-4155-49f4-aa34-e684461b26e4"
+        name="ObserableCollection&lt;Restaurant&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
