@@ -58,46 +58,28 @@
         </Grid>
         <Grid Margin="0,5,0,0" Grid.Row="1">
             <Grid.RowDefinitions>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="44*"/>
                 <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="100*"/>
-                <RowDefinition Height="213*"/>
+                <RowDefinition Height="94*"/>
+                <RowDefinition Height="200*"/>
             </Grid.RowDefinitions>
-            <TextBox TextWrapping="Wrap" PlaceholderText="Restaurantnavn" Text="{Binding tilfoejRestaurantHandler.RestaurantNavn, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="1"/>
+            <TextBox TextWrapping="Wrap" PlaceholderText="Restaurantnavn" Text="{Binding TilfoejRestaurantHandler.RestaurantNavn, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="1"/>
 
             <TextBox TextWrapping="Wrap" PlaceholderText="Beskrivelse" Text="{Binding TilfoejRestaurantHandler.Beskrivelse, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="3"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Telefon" Text="{Binding TilfoejRestaurantHandler.Telefon, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="4"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Hjemmeside" Text="{Binding TilfoejRestaurantHandler.Hjemmeside, Mode=TwoWay}" Grid.Row="5" Margin="40 0 40 5"/>
+            <TextBox TextWrapping="Wrap" PlaceholderText="Billede" Text="{Binding TilfoejRestaurantHandler.Billede, Mode=TwoWay}" Grid.Row="6" Margin="40,0,40,5"/>
+            <ComboBox PlaceholderText="Vælg en kategori" ItemsSource="{Binding KategoriKatalog}" SelectedItem="{Binding TilfoejRestaurantHandler.SelectedKategori, Mode=TwoWay}" Margin="40,0,40,0" Grid.Row="7"/>
 
-            <ComboBox ItemsSource="{Binding KategoriKatalog}" SelectedItem="{Binding TilfoejRestaurantHandler.SelectedKategori, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="6"/>
-
-            <Button Content="Tilføj restaurant" Command="{Binding TilfoejRestaurantCommand}" Grid.Row="7" HorizontalAlignment="Stretch" Margin="40 10 40 5" VerticalAlignment="Stretch" Background="#FF444444"/>
-            <ListBox Width="300" ItemsSource="{Binding ObservableCollectionOfRestaurants2}" Grid.Row="8"/>
-            <StackPanel Grid.Row="2" Orientation="Horizontal">
-                <RadioButton GroupName="bedøm" Margin="40 10 10 10">
-                    <TextBlock>
-                        <Run Text="1"/>
-                        <Run Text="{Binding TilfoejRestaurantHandler.Bedømmelse}"/>
-                    </TextBlock>
-                </RadioButton>
-                <RadioButton GroupName="bedøm" Margin="5 10 10 10">
-                    <TextBlock>
-                        <Run Text="2"/>
-                        <Run Text="{Binding TilfoejRestaurantHandler.Bedømmelse}"/>
-                    </TextBlock>
-                </RadioButton>
-
-                <!--<ComboBox x:Name="comboBox1" SelectedItem="{Binding TilfoejRestaurantHandler.Bedømmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse">
-                    <ComboBoxItem Name="cbi1">1</ComboBoxItem>
-                    <ComboBoxItem Name="cbi2">2</ComboBoxItem>
-                    <ComboBoxItem Name="cbi3">3</ComboBoxItem>
-                </ComboBox>-->
-            </StackPanel>
+            <Button Content="Tilføj restaurant" Command="{Binding TilfoejRestaurantCommand}" Grid.Row="8" HorizontalAlignment="Stretch" Margin="40 10 40 5" VerticalAlignment="Stretch" Background="#FF444444"/>
+            <ListBox Width="300" ItemsSource="{Binding Kategori2}" Grid.Row="9" Margin="533,0"/>
+            <ComboBox x:Name="comboBox1" ItemsSource="{Binding NrListe1}" SelectedItem="{Binding TilfoejRestaurantHandler.Bedømmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse"/>
         </Grid>
     </Grid>
 </Page>

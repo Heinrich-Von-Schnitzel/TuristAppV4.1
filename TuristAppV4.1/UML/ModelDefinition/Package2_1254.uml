@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="8da16ac6-85df-4245-b6e8-2edd3856e516"
   name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -13,20 +13,20 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="dff93005-6515-4573-bd2a-55f643fc6208"
+            Id="01e4e34f-f735-460e-b5cc-d0123d912f1d"
             isDerived="false"
             sourceEndRoleName="Restaurant"
-            targetEndRoleName="Kategori"
+            targetEndRoleName="MainViewmodel"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="fe7bc79b-3e9a-4b2d-8253-419393c54c90"
-              LastKnownName="Kategori"
-              LastKnownLocation="Package2_1254.uml" />
+              Id="46bd0255-aba7-48b8-86a2-7a1f05f71b36"
+              LastKnownName="MainViewmodel"
+              LastKnownLocation="Package1_1254.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="5bf390a8-110b-4f74-a3c1-bb319b2f40eb"
+                  Id="cb30d319-ec66-447a-a2f4-1ca1f1f7655b"
                   name="Restaurant"
                   isLeaf="false"
                   isStatic="false"
@@ -38,13 +38,13 @@
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="c41738c9-c82d-458a-aa00-3839e31250c3"
+                      Id="1a852d9c-ddc3-435d-bd7c-548fa70d67fb"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="9c420626-2567-46b1-90e4-0415a2120443"
+                      Id="517ba6fa-9116-482f-a583-16531d309b5a"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -52,8 +52,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="cb440eff-14ed-4108-a760-ff629153913d"
-                  name="Kategori"
+                  Id="b5f2a762-c76e-4629-b0c5-122dd6cee901"
+                  name="MainViewmodel"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -184,6 +184,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1df717b5-8471-49e6-920b-699364956c05"
+            isDerived="false"
+            sourceEndRoleName="Kategori"
+            targetEndRoleName="MainViewmodel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="46bd0255-aba7-48b8-86a2-7a1f05f71b36"
+              LastKnownName="MainViewmodel"
+              LastKnownLocation="Package1_1254.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a5d2917-6966-4545-867e-3f4df4ff19ec"
+                  name="Kategori"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e057ebbc-d5aa-47bc-94ed-7ebf756c25dc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9344811-37b3-436a-9364-afb120c341e5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28f8f1d0-65f2-4d50-910c-4184bc05363c"
+                  name="MainViewmodel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="84ebde86-98b2-417d-bcd0-bb996e5f452e"
@@ -203,8 +257,31 @@
                 LastKnownLocation="UML.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="b2e363ac-023f-4658-9f36-6a07f6d79813"
+            name="ListeAfRestauranter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9c65f04b-22fb-4c7e-a0dd-63d87948b558"
+                LastKnownName="ObservableCollection&lt;Restauranter&gt;"
+                LastKnownLocation="Package2_1254.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9c65f04b-22fb-4c7e-a0dd-63d87948b558"
+        name="ObservableCollection&lt;Restauranter&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
