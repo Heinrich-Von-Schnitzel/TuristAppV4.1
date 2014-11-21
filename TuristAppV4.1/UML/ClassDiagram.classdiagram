@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
@@ -74,7 +74,7 @@
                       </memberEnd>
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
-                      <memberEnd Id="344bfa99-10cd-4284-baa4-989a67caa8c3" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <memberEnd Id="344bfa99-10cd-4284-baa4-989a67caa8c3" name="MainViewmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                         <elementDefinition Id="337ac8af-1ec8-48e7-b577-f653f9e4a755" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -216,6 +216,16 @@
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="b73697ff-0c24-4158-b0f6-63b2ef8f35fb" name="Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="161744e9-0379-496e-a83d-459ca4fafe3b" name="Lower" value="*">
+                            <elementDefinition Id="c4dfc145-b1b3-4bfe-bb08-2d976f50990d" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="206acee1-8073-40ea-8465-49676b1cf1d7" name="Upper" value="*">
+                            <elementDefinition Id="df289910-0dfa-4f4b-90d7-8ee9076463e4" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="2ecafdd5-1567-435c-9b78-ac8db5f36518" />
                       </memberEnd>
                     </associationHasOwnedEnds>

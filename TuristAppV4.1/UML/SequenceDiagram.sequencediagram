@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="cc78b2f4-de16-4cbd-813c-8951a4bf1979" name="SequenceDiagram" linkedPackageId="afd0ecba-f258-4a3d-b80e-ec57e1405198" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="31043899-0618-4773-a17d-2ed61c0602ce">
-      <profileInstance Id="75e4530c-468d-44c1-b654-551d1f333e15" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="84651279-230a-497c-b9cb-61de6ed9bcad">
-      <profileInstance Id="9d4e1c87-c27b-4a98-a4e6-949f4a028922" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="cc78b2f4-de16-4cbd-813c-8951a4bf1979" name="SequenceDiagram" linkedPackageId="afd0ecba-f258-4a3d-b80e-ec57e1405198" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="1029e9dd-383c-494a-9a29-0b6232fd4534" name="vælg information / restaurant" isAbstract="false" isLeaf="false" cachedFullName="UML::vælg information / restaurant">
@@ -27,7 +13,7 @@
           <behaviorExecutionSpecification Id="fd93b583-0a56-4334-8bec-ac75966624ad" name="BehaviorExecutionSpecification6">
             <elementDefinition Id="955142cb-c114-42c6-9e45-39ed58380e01" />
             <coveredLifelines>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="1192fdba-951c-4f1c-8df1-1b732b777c2e" LastKnownName="ExecutionOccurrenceSpecification12" />
@@ -37,10 +23,8 @@
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker Id="4c204a0c-1591-4c28-8f27-8944f9718928" LastKnownName="MessageOccurrenceSpecification20" />
-              <messageOccurrenceSpecificationMoniker Id="1951fa2d-6c20-48d4-a5be-181f4a61b660" LastKnownName="MessageOccurrenceSpecification25" />
-              <messageOccurrenceSpecificationMoniker Id="a425bffb-12b2-4ed4-bfde-dd0bacf498b8" LastKnownName="MessageOccurrenceSpecification28" />
-              <messageOccurrenceSpecificationMoniker Id="cb3942ba-0bda-457e-953a-5155bc1cba9b" LastKnownName="MessageOccurrenceSpecification31" />
-              <messageOccurrenceSpecificationMoniker Id="b90c35bf-9450-480e-ba8f-9d11e043165f" LastKnownName="MessageOccurrenceSpecification34" />
+              <messageOccurrenceSpecificationMoniker Id="2c312d65-b225-40ab-be48-8324eff9560c" LastKnownName="MessageOccurrenceSpecification47" />
+              <messageOccurrenceSpecificationMoniker Id="884ee486-364b-4078-8eff-433d0134507c" LastKnownName="MessageOccurrenceSpecification50" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification Id="239eb9b3-3763-44f7-809e-fbecb58683a4" name="ExecutionOccurrenceSpecification11">
@@ -51,7 +35,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="1888712c-e8b7-4ca7-ad4c-b61827b062f6" name="MessageOccurrenceSpecification19">
@@ -63,131 +47,133 @@
           <messageOccurrenceSpecification Id="4c204a0c-1591-4c28-8f27-8944f9718928" name="MessageOccurrenceSpecification20">
             <elementDefinition Id="e4084e62-7c5d-4f6b-a520-6058141a750d" />
             <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
             </covered>
           </messageOccurrenceSpecification>
-          <behaviorExecutionSpecification Id="e84cf509-db81-41cb-b52f-e43f072b65de" name="BehaviorExecutionSpecification8">
-            <elementDefinition Id="b25f20d2-49f4-451a-84c9-a53c8fbc6e79" />
+          <behaviorExecutionSpecification Id="a61ca7ff-f8ba-40fc-9da0-e03e7889e663" name="BehaviorExecutionSpecification15">
+            <elementDefinition Id="2e52490b-4099-4f34-bc83-124091d90532" />
+            <coveredLifelines>
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="aef7389f-ffa0-4aba-b908-abd1ae9642f0" LastKnownName="ExecutionOccurrenceSpecification30" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c57b8fb2-e5ab-4e40-a737-eec8c1b8f239" LastKnownName="ExecutionOccurrenceSpecification29" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="65416e6c-bb07-452b-b73c-a7a4bdb9811f" LastKnownName="MessageOccurrenceSpecification48" />
+              <messageOccurrenceSpecificationMoniker Id="4584c1b5-51af-4ffd-a063-72203b870aa5" LastKnownName="MessageOccurrenceSpecification51" />
+              <messageOccurrenceSpecificationMoniker Id="f3ee3e0c-5e3c-4ccd-98a1-58d304e07350" LastKnownName="MessageOccurrenceSpecification54" />
+              <messageOccurrenceSpecificationMoniker Id="6906dd8c-3293-47c7-8c06-1b93db640840" LastKnownName="MessageOccurrenceSpecification49" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c57b8fb2-e5ab-4e40-a737-eec8c1b8f239" name="ExecutionOccurrenceSpecification29">
+            <elementDefinition Id="fe12af27-2703-451c-85f8-5fd343ced93c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2a874c8e-e7dd-4b20-9c41-41ff8c1cc286" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2c312d65-b225-40ab-be48-8324eff9560c" name="MessageOccurrenceSpecification47">
+            <elementDefinition Id="df6a677f-a661-40cf-bbd7-fad95a5db7dd" />
+            <covered>
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="65416e6c-bb07-452b-b73c-a7a4bdb9811f" name="MessageOccurrenceSpecification48">
+            <elementDefinition Id="335fa027-39bf-4e95-853e-9c6a8a791208" />
+            <covered>
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="00ce4229-29d8-4c77-b0f5-2f67dcdbe607" name="BehaviorExecutionSpecification16">
+            <elementDefinition Id="5b7ce89b-53a5-4bc1-ad2a-971fba3c7590" />
             <coveredLifelines>
               <lifelineMoniker Id="34873293-a7f7-4381-a45c-812f2686fed4" LastKnownName=": Restaurant" />
             </coveredLifelines>
             <finish>
-              <executionOccurrenceSpecificationMoniker Id="7fa4163a-f7fa-462e-9633-4d66dc15364b" LastKnownName="ExecutionOccurrenceSpecification16" />
+              <executionOccurrenceSpecificationMoniker Id="b1d1dc6e-60f1-4577-bee9-566a18341e57" LastKnownName="ExecutionOccurrenceSpecification32" />
             </finish>
             <start>
-              <executionOccurrenceSpecificationMoniker Id="87532443-ab42-4e63-8b87-694d2dc481f7" LastKnownName="ExecutionOccurrenceSpecification15" />
+              <executionOccurrenceSpecificationMoniker Id="1743355c-27f5-4cb0-b652-5ecf61672c20" LastKnownName="ExecutionOccurrenceSpecification31" />
             </start>
             <nestedOccurrences>
-              <messageOccurrenceSpecificationMoniker Id="fa606158-6dda-4f0e-9d0e-cc858db075e3" LastKnownName="MessageOccurrenceSpecification26" />
-              <messageOccurrenceSpecificationMoniker Id="d0d5c456-d7ba-421a-b9c5-764da35cc79c" LastKnownName="MessageOccurrenceSpecification27" />
+              <messageOccurrenceSpecificationMoniker Id="1dbc84c9-a580-4d89-b6f5-63968bbefc25" LastKnownName="MessageOccurrenceSpecification52" />
+              <messageOccurrenceSpecificationMoniker Id="ccb1cffc-30bb-4e2d-a57a-0e289731c6d9" LastKnownName="MessageOccurrenceSpecification53" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
-          <executionOccurrenceSpecification Id="87532443-ab42-4e63-8b87-694d2dc481f7" name="ExecutionOccurrenceSpecification15">
-            <elementDefinition Id="ca39d02d-fd66-4939-921b-5909fab19f30" />
+          <executionOccurrenceSpecification Id="1743355c-27f5-4cb0-b652-5ecf61672c20" name="ExecutionOccurrenceSpecification31">
+            <elementDefinition Id="28a34204-248a-477d-a104-9e5e9fd9e2d3" />
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker Id="d4323c06-6394-418b-808d-850fe0200619" LastKnownName="ExecutionEvent" />
+                <executionEventMoniker Id="d7c48e6a-8b70-4e60-aa32-1f699b16b184" LastKnownName="ExecutionEvent" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker Id="34873293-a7f7-4381-a45c-812f2686fed4" LastKnownName=": Restaurant" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="1951fa2d-6c20-48d4-a5be-181f4a61b660" name="MessageOccurrenceSpecification25">
-            <elementDefinition Id="528561b3-1ffa-4e50-a0ff-aaa4de610589" />
-            <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="fa606158-6dda-4f0e-9d0e-cc858db075e3" name="MessageOccurrenceSpecification26">
-            <elementDefinition Id="eba9ac18-dca2-4184-941e-f380230e2765" />
+          <messageOccurrenceSpecification Id="1dbc84c9-a580-4d89-b6f5-63968bbefc25" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="5813f3bb-b800-4228-b441-7e4a6cf44ad5" />
             <covered>
               <lifelineMoniker Id="34873293-a7f7-4381-a45c-812f2686fed4" LastKnownName=": Restaurant" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="a425bffb-12b2-4ed4-bfde-dd0bacf498b8" name="MessageOccurrenceSpecification28">
-            <elementDefinition Id="b3b5c130-b484-458a-ae92-36f716f04fc2" />
+          <messageOccurrenceSpecification Id="4584c1b5-51af-4ffd-a063-72203b870aa5" name="MessageOccurrenceSpecification51">
+            <elementDefinition Id="a05ea011-f622-4672-a643-157967147d24" />
             <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="d0d5c456-d7ba-421a-b9c5-764da35cc79c" name="MessageOccurrenceSpecification27">
-            <elementDefinition Id="036605c1-c558-4440-898a-2a0c2008fa91" />
+          <messageOccurrenceSpecification Id="f3ee3e0c-5e3c-4ccd-98a1-58d304e07350" name="MessageOccurrenceSpecification54">
+            <elementDefinition Id="77fd3f6b-0ac0-4e2d-96c0-dfaf2cea45b5" />
+            <covered>
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ccb1cffc-30bb-4e2d-a57a-0e289731c6d9" name="MessageOccurrenceSpecification53">
+            <elementDefinition Id="152a7a7b-0868-4376-8016-bd69b4d3ef5d" />
             <covered>
               <lifelineMoniker Id="34873293-a7f7-4381-a45c-812f2686fed4" LastKnownName=": Restaurant" />
             </covered>
           </messageOccurrenceSpecification>
-          <executionOccurrenceSpecification Id="7fa4163a-f7fa-462e-9633-4d66dc15364b" name="ExecutionOccurrenceSpecification16">
-            <elementDefinition Id="0d66c793-2da4-4744-a756-c5c57b5bf960" />
+          <executionOccurrenceSpecification Id="b1d1dc6e-60f1-4577-bee9-566a18341e57" name="ExecutionOccurrenceSpecification32">
+            <elementDefinition Id="6eef86ed-8d52-4021-bdcc-c0cfeee4d4bd" />
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker Id="3a20740c-6ec0-4c0f-8846-0cfd4bbcc1ce" LastKnownName="ExecutionEvent" />
+                <executionEventMoniker Id="761fe1ba-59d8-44c8-b1be-0745897b7f8d" LastKnownName="ExecutionEvent" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker Id="34873293-a7f7-4381-a45c-812f2686fed4" LastKnownName=": Restaurant" />
             </covered>
           </executionOccurrenceSpecification>
-          <behaviorExecutionSpecification Id="3bb03e5f-ef6b-47ed-a618-2a1706e6d2e8" name="BehaviorExecutionSpecification10">
-            <elementDefinition Id="3e9a6d39-57e3-4e6c-92fc-748679146b73" />
-            <coveredLifelines>
-              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": MainViewModel" />
-            </coveredLifelines>
-            <finish>
-              <executionOccurrenceSpecificationMoniker Id="b8ae9276-065d-48f4-b5b6-ae579998175e" LastKnownName="ExecutionOccurrenceSpecification20" />
-            </finish>
-            <start>
-              <executionOccurrenceSpecificationMoniker Id="6395bcc1-db32-4ccf-a301-07190d4a5783" LastKnownName="ExecutionOccurrenceSpecification19" />
-            </start>
-            <nestedOccurrences>
-              <messageOccurrenceSpecificationMoniker Id="2d2f686c-751a-4671-9acb-43e93e38243b" LastKnownName="MessageOccurrenceSpecification32" />
-              <messageOccurrenceSpecificationMoniker Id="7d1c7249-a7fa-4665-92e1-f7d7e3cba8dc" LastKnownName="MessageOccurrenceSpecification33" />
-            </nestedOccurrences>
-          </behaviorExecutionSpecification>
-          <executionOccurrenceSpecification Id="6395bcc1-db32-4ccf-a301-07190d4a5783" name="ExecutionOccurrenceSpecification19">
-            <elementDefinition Id="59e074b5-250d-4fbe-829f-17540e44e849" />
+          <messageOccurrenceSpecification Id="6906dd8c-3293-47c7-8c06-1b93db640840" name="MessageOccurrenceSpecification49">
+            <elementDefinition Id="45f3ce23-4b2b-4542-85b7-f6699c2e4546" />
+            <covered>
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="884ee486-364b-4078-8eff-433d0134507c" name="MessageOccurrenceSpecification50">
+            <elementDefinition Id="662e25cb-c143-46cf-8000-1918a7aafe22" />
+            <covered>
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="aef7389f-ffa0-4aba-b908-abd1ae9642f0" name="ExecutionOccurrenceSpecification30">
+            <elementDefinition Id="c2073223-7b38-4a48-bfc1-ebc14e5b8eb8" />
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker Id="eb6126a0-7832-43ba-8fe7-8e3401213a29" LastKnownName="ExecutionEvent" />
+                <executionEventMoniker Id="c0b461f4-6200-4f9b-b334-410e206ebc2c" LastKnownName="ExecutionEvent" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": MainViewModel" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="cb3942ba-0bda-457e-953a-5155bc1cba9b" name="MessageOccurrenceSpecification31">
-            <elementDefinition Id="2c60ced5-0d8d-441a-a19c-b791b6268929" />
-            <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="2d2f686c-751a-4671-9acb-43e93e38243b" name="MessageOccurrenceSpecification32">
-            <elementDefinition Id="2806ca70-42b4-4a9c-b760-dbe0df508898" />
-            <covered>
-              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": MainViewModel" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="7d1c7249-a7fa-4665-92e1-f7d7e3cba8dc" name="MessageOccurrenceSpecification33">
-            <elementDefinition Id="f74e2503-2647-4e2f-b3f3-28752a9a9afa" />
-            <covered>
-              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": MainViewModel" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="b90c35bf-9450-480e-ba8f-9d11e043165f" name="MessageOccurrenceSpecification34">
-            <elementDefinition Id="86063657-193a-4ea4-8aed-4aa55f3cfc6d" />
-            <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <executionOccurrenceSpecification Id="b8ae9276-065d-48f4-b5b6-ae579998175e" name="ExecutionOccurrenceSpecification20">
-            <elementDefinition Id="17cf524e-f6eb-4036-9001-918185f4b9ae" />
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker Id="1416ae51-cdff-4510-a4cb-436916dd3a2b" LastKnownName="ExecutionEvent" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": MainViewModel" />
+              <lifelineMoniker Id="2599656a-b8f2-4952-89ac-081783c31bcd" LastKnownName=": TilfoejRestaurantHandler" />
             </covered>
           </executionOccurrenceSpecification>
           <executionOccurrenceSpecification Id="1192fdba-951c-4f1c-8df1-1b732b777c2e" name="ExecutionOccurrenceSpecification12">
@@ -198,7 +184,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": OpretRestaurantHandler" />
+              <lifelineMoniker Id="85649402-9653-4863-9ef7-aacdcb51abc5" LastKnownName=": MainViewmodel" />
             </covered>
           </executionOccurrenceSpecification>
         </fragments>
@@ -212,18 +198,18 @@
               <messageOccurrenceSpecificationMoniker Id="1888712c-e8b7-4ca7-ad4c-b61827b062f6" LastKnownName="MessageOccurrenceSpecification19" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="85649402-9653-4863-9ef7-aacdcb51abc5" name=": OpretRestaurantHandler" isActor="false" lifelineDisplayName=": OpretRestaurantHandler">
+          <lifeline Id="85649402-9653-4863-9ef7-aacdcb51abc5" name=": MainViewmodel" isActor="false" lifelineDisplayName=": MainViewmodel">
             <elementDefinition Id="01feeb6f-e2bc-4e1f-a911-91fa740ca3f6" />
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="239eb9b3-3763-44f7-809e-fbecb58683a4" LastKnownName="ExecutionOccurrenceSpecification11" />
               <executionOccurrenceSpecificationMoniker Id="1192fdba-951c-4f1c-8df1-1b732b777c2e" LastKnownName="ExecutionOccurrenceSpecification12" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="2599656a-b8f2-4952-89ac-081783c31bcd" name=": MainViewModel" isActor="false" lifelineDisplayName=": MainViewModel">
+          <lifeline Id="2599656a-b8f2-4952-89ac-081783c31bcd" name=": TilfoejRestaurantHandler" isActor="false" lifelineDisplayName=": TilfoejRestaurantHandler">
             <elementDefinition Id="e3f203e3-9b42-4bcb-a7ce-acc8cff7d08e" />
             <topLevelOccurrences>
-              <executionOccurrenceSpecificationMoniker Id="6395bcc1-db32-4ccf-a301-07190d4a5783" LastKnownName="ExecutionOccurrenceSpecification19" />
-              <executionOccurrenceSpecificationMoniker Id="b8ae9276-065d-48f4-b5b6-ae579998175e" LastKnownName="ExecutionOccurrenceSpecification20" />
+              <executionOccurrenceSpecificationMoniker Id="c57b8fb2-e5ab-4e40-a737-eec8c1b8f239" LastKnownName="ExecutionOccurrenceSpecification29" />
+              <executionOccurrenceSpecificationMoniker Id="aef7389f-ffa0-4aba-b908-abd1ae9642f0" LastKnownName="ExecutionOccurrenceSpecification30" />
             </topLevelOccurrences>
           </lifeline>
           <lifeline Id="34873293-a7f7-4381-a45c-812f2686fed4" name=": Restaurant" isActor="false" lifelineDisplayName=": Restaurant">
@@ -232,8 +218,8 @@
               <propertyMoniker Id="59a19fa6-7fe3-45f0-b668-2112018045c3" />
             </represents>
             <topLevelOccurrences>
-              <executionOccurrenceSpecificationMoniker Id="87532443-ab42-4e63-8b87-694d2dc481f7" LastKnownName="ExecutionOccurrenceSpecification15" />
-              <executionOccurrenceSpecificationMoniker Id="7fa4163a-f7fa-462e-9633-4d66dc15364b" LastKnownName="ExecutionOccurrenceSpecification16" />
+              <executionOccurrenceSpecificationMoniker Id="1743355c-27f5-4cb0-b652-5ecf61672c20" LastKnownName="ExecutionOccurrenceSpecification31" />
+              <executionOccurrenceSpecificationMoniker Id="b1d1dc6e-60f1-4577-bee9-566a18341e57" LastKnownName="ExecutionOccurrenceSpecification32" />
             </topLevelOccurrences>
           </lifeline>
         </lifelines>
@@ -247,40 +233,40 @@
               <messageOccurrenceSpecificationMoniker Id="4c204a0c-1591-4c28-8f27-8944f9718928" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
-          <message Id="25aebe31-f060-4762-ab1a-ddd9e437bbcb" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
-            <elementDefinition Id="7230f551-af6d-47c5-94f4-24fe2b3f6e5a" />
+          <message Id="ab03b134-45a9-4c38-ad7d-65c06ed4ce3b" name="OpretRestaurant(parameter)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="8229cb72-44d7-45d1-ac28-2631d359b97b" />
             <sendEvent>
-              <messageOccurrenceSpecificationMoniker Id="1951fa2d-6c20-48d4-a5be-181f4a61b660" LastKnownName="MessageOccurrenceSpecification25" />
+              <messageOccurrenceSpecificationMoniker Id="2c312d65-b225-40ab-be48-8324eff9560c" LastKnownName="MessageOccurrenceSpecification47" />
             </sendEvent>
             <receiveEvent>
-              <messageOccurrenceSpecificationMoniker Id="fa606158-6dda-4f0e-9d0e-cc858db075e3" LastKnownName="MessageOccurrenceSpecification26" />
+              <messageOccurrenceSpecificationMoniker Id="65416e6c-bb07-452b-b73c-a7a4bdb9811f" LastKnownName="MessageOccurrenceSpecification48" />
             </receiveEvent>
           </message>
-          <message Id="1013ce0a-7efe-460c-b15f-2c54a91dd210" name="&lt;&lt;return restaurant&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
-            <elementDefinition Id="5c00e572-03ac-4e0d-8de9-8c3919d33fc5" />
+          <message Id="d71e95fe-0603-4cc8-84c6-63f037c041bc" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="071279e2-9d6b-4ad6-8ce9-a2be50d7c437" />
             <sendEvent>
-              <messageOccurrenceSpecificationMoniker Id="d0d5c456-d7ba-421a-b9c5-764da35cc79c" LastKnownName="MessageOccurrenceSpecification27" />
+              <messageOccurrenceSpecificationMoniker Id="4584c1b5-51af-4ffd-a063-72203b870aa5" LastKnownName="MessageOccurrenceSpecification51" />
             </sendEvent>
             <receiveEvent>
-              <messageOccurrenceSpecificationMoniker Id="a425bffb-12b2-4ed4-bfde-dd0bacf498b8" LastKnownName="MessageOccurrenceSpecification28" />
+              <messageOccurrenceSpecificationMoniker Id="1dbc84c9-a580-4d89-b6f5-63968bbefc25" LastKnownName="MessageOccurrenceSpecification52" />
             </receiveEvent>
           </message>
-          <message Id="d2e86ddd-3fac-4be0-ae0a-91cc51c9089b" name="Add(restaurant)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
-            <elementDefinition Id="b761ebcb-9f5c-494b-a56f-75bb14cd0e4f" />
+          <message Id="517e8bed-478b-4446-9c3a-f3639dd8f1ba" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="6f4cdc3c-b44d-4cb5-b18d-715656e8c581" />
             <sendEvent>
-              <messageOccurrenceSpecificationMoniker Id="cb3942ba-0bda-457e-953a-5155bc1cba9b" LastKnownName="MessageOccurrenceSpecification31" />
+              <messageOccurrenceSpecificationMoniker Id="ccb1cffc-30bb-4e2d-a57a-0e289731c6d9" LastKnownName="MessageOccurrenceSpecification53" />
             </sendEvent>
             <receiveEvent>
-              <messageOccurrenceSpecificationMoniker Id="2d2f686c-751a-4671-9acb-43e93e38243b" LastKnownName="MessageOccurrenceSpecification32" />
+              <messageOccurrenceSpecificationMoniker Id="f3ee3e0c-5e3c-4ccd-98a1-58d304e07350" LastKnownName="MessageOccurrenceSpecification54" />
             </receiveEvent>
           </message>
-          <message Id="50d0aeb9-6817-4002-87b6-24e83fb1b6e7" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
-            <elementDefinition Id="3b107f28-66f1-4cc1-8c4e-5e0bcbba2c3e" />
+          <message Id="e8ae1416-675f-4c17-999c-e0facf86b7fc" name="&lt;&lt;Add(restaurant)&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="92cc6f90-4e36-4904-88ba-020ddad93e08" />
             <sendEvent>
-              <messageOccurrenceSpecificationMoniker Id="7d1c7249-a7fa-4665-92e1-f7d7e3cba8dc" LastKnownName="MessageOccurrenceSpecification33" />
+              <messageOccurrenceSpecificationMoniker Id="6906dd8c-3293-47c7-8c06-1b93db640840" LastKnownName="MessageOccurrenceSpecification49" />
             </sendEvent>
             <receiveEvent>
-              <messageOccurrenceSpecificationMoniker Id="b90c35bf-9450-480e-ba8f-9d11e043165f" LastKnownName="MessageOccurrenceSpecification34" />
+              <messageOccurrenceSpecificationMoniker Id="884ee486-364b-4078-8eff-433d0134507c" LastKnownName="MessageOccurrenceSpecification50" />
             </receiveEvent>
           </message>
         </messages>
@@ -327,27 +313,41 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent Id="d4323c06-6394-418b-808d-850fe0200619" name="ExecutionEvent">
-        <elementDefinition Id="9720180c-b5e2-4092-b85c-6f74ef13bf10" />
+      <executionEvent Id="2a874c8e-e7dd-4b20-9c41-41ff8c1cc286" name="ExecutionEvent">
+        <elementDefinition Id="05bab41d-6ac4-46dc-8316-3fc0e6a5189d" />
       </executionEvent>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent Id="3a20740c-6ec0-4c0f-8846-0cfd4bbcc1ce" name="ExecutionEvent">
-        <elementDefinition Id="ac22c8b4-02d8-468d-b3b6-4df4d53a6f59" />
+      <executionEvent Id="c0b461f4-6200-4f9b-b334-410e206ebc2c" name="ExecutionEvent">
+        <elementDefinition Id="b32bf850-c43b-429d-8d3c-827ab1d8bb96" />
       </executionEvent>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent Id="eb6126a0-7832-43ba-8fe7-8e3401213a29" name="ExecutionEvent">
-        <elementDefinition Id="86e33a80-69f1-4b34-9174-0b77295eb98a" />
+      <executionEvent Id="d7c48e6a-8b70-4e60-aa32-1f699b16b184" name="ExecutionEvent">
+        <elementDefinition Id="0cfad844-bd6c-4262-aab2-03b0bda528c1" />
       </executionEvent>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent Id="1416ae51-cdff-4510-a4cb-436916dd3a2b" name="ExecutionEvent">
-        <elementDefinition Id="8cc8948d-dc8f-471c-8108-9a1f136f10e4" />
+      <executionEvent Id="761fe1ba-59d8-44c8-b1be-0745897b7f8d" name="ExecutionEvent">
+        <elementDefinition Id="abd0499c-5a0b-41f8-89b7-b16873e5d13a" />
       </executionEvent>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="afd0ecba-f258-4a3d-b80e-ec57e1405198" name="UML">
     <elementDefinition Id="9aac7550-e19c-4c03-bd95-4b9cebc0c498" />
+    <profileInstances>
+      <packageHasProfileInstances Id="31043899-0618-4773-a17d-2ed61c0602ce">
+        <profileInstance Id="75e4530c-468d-44c1-b654-551d1f333e15" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="84651279-230a-497c-b9cb-61de6ed9bcad">
+        <profileInstance Id="9d4e1c87-c27b-4a98-a4e6-949f4a028922" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
