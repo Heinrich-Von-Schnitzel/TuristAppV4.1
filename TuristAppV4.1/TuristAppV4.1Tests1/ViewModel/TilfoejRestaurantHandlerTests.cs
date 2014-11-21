@@ -33,7 +33,7 @@ namespace TuristAppV4._1Tests1.ViewModel
             }
             catch (ArgumentException ex)
             {
-                Assert.AreEqual("Restaurantnavnet er null eller tomt", ex.Message);
+                Assert.AreEqual("Restaurantnavnet er null, tomt eller over 30 tegn", ex.Message);
             }
         }
     }
