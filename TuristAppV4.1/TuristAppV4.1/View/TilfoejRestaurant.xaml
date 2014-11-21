@@ -61,7 +61,7 @@
                 <RowDefinition Height="47*"/>
                 <RowDefinition Height="47*"/>
                 <RowDefinition Height="47*"/>
-                <RowDefinition Height="47*"/>
+                <RowDefinition Height="200*"/>
                 <RowDefinition Height="47*"/>
                 <RowDefinition Height="47*"/>
                 <RowDefinition Height="44*"/>

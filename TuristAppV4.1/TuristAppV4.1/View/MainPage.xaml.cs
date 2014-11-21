@@ -31,9 +31,17 @@ namespace TuristAppV4._1
             this.InitializeComponent();
         }
 
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Restaurant));
+            if (gridView1.SelectedIndex == -1 && gridView2.SelectedIndex == -1 && gridView3.SelectedIndex == -1)
+            {
+                MessageDialog telefonfejl = new MessageDialog("Vælg venligst en restaurant");
+                await telefonfejl.ShowAsync();
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(Restaurant)); 
+            }   
         }
 
         private async void AppBarButton_Click_1(object sender, RoutedEventArgs e)
@@ -42,5 +50,32 @@ namespace TuristAppV4._1
         }
 
 
+
+        private async void gridView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (gridView1.SelectedIndex > -1)
+            {
+                gridView2.SelectedIndex = -1;
+                gridView3.SelectedIndex = -1;
+            }
+        }
+
+        private void gridView2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (gridView2.SelectedIndex > -1)
+            {
+                gridView1.SelectedIndex = -1;
+                gridView3.SelectedIndex = -1;
+            }
+        }
+
+        private void gridView3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (gridView3.SelectedIndex > -1)
+            {
+                gridView1.SelectedIndex = -1;
+                gridView2.SelectedIndex = -1;
+            }
+        }
     }
 }

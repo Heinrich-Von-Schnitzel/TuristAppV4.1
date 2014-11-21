@@ -75,7 +75,7 @@ namespace TuristAppV4._1.ViewModel
         {
             if (SelectedRestaurant == null)
             {
-                MessageDialog slet = new MessageDialog("Du har ikke valgt en restaurant. Vælg først en restaurant og tryk dernæst på slet-knappen", "Der er ikke blevet valgt en kategori");
+                MessageDialog slet = new MessageDialog("Du har ikke valgt en restaurant. Vælg først en restaurant og tryk dernæst på slet-knappen", "Der er ikke blevet valgt en restaurant");
                 slet.Commands.Add(new UICommand("Luk notifikation"));
                 await slet.ShowAsync();
             }

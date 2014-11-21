@@ -74,18 +74,16 @@ namespace TuristAppV4._1.ViewModel
                 await navnfejl.ShowAsync();
             }
             if (RestaurantNavn.Length >= 30)
-            {
-                
+            {     
                 MessageDialog navnfejl = new MessageDialog("Navnet må højst være 30 tegn");
                 await navnfejl.ShowAsync();
-           
             }
         }
         public void CheckRestaurantNavn1(string restaurantNavn)
         {
             if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30)
             {
-                throw new ArgumentException("Navnet er null eller tomt");
+                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
             }
         }
         public async void CheckRestaurantTelefon(string telefon)
