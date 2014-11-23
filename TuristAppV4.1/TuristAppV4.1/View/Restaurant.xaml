@@ -8,6 +8,7 @@
     xmlns:viewModel="using:TuristAppV4._1.ViewModel"
     x:Name="PageRoot"
     x:Class="TuristAppV4._1.View.Restaurant"
+    xmlns:bm="using:Bing.Maps"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -56,18 +57,14 @@
             <TextBlock x:Name="pageTitle" Text="{Binding SelectedRestaurant.RestaurantNavn}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="608" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1346">
+        <Grid Height="610" Margin="10,10,0,0" Grid.Row="1" Width="700" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50*"/>
-                <RowDefinition Height="200*"/>
+                <RowDefinition Height="100*"/>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="268*"/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="215*"/>
-                <ColumnDefinition Width="220*"/>
-            </Grid.ColumnDefinitions>
             <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20">
                 <Run Text="Bedømmelse: "/>
                 <Run Text="{Binding SelectedRestaurant.Bedømmelse}"/>
@@ -77,8 +74,25 @@
                 <Run Text="Telefonnummer: "/>
                 <Run Text="{Binding SelectedRestaurant.Telefon}"/>
             </TextBlock>
-            <HyperlinkButton Margin="20 0 0 0" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="Besøg hjemmeside" FontSize="20" Grid.Row="3"/>
-            <Image Source="{Binding SelectedRestaurant.Billede}" Grid.Column="1" Grid.RowSpan="5" Stretch="Fill" />
+            <HyperlinkButton Margin="25 0 0 0" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="Besøg hjemmeside" FontSize="20" Grid.Row="3"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Margin="710,10,0,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250*"/>
+                <RowDefinition Height="180*"/>
+            </Grid.RowDefinitions>
+            <Image Source="{Binding SelectedRestaurant.Billede}" Stretch="UniformToFill" Margin="0,0,10,10" />
+            <bm:Map ZoomLevel="13" Credentials="Aq6wxet50iiSnDa3xudJAD3OsDXeK62jlJg37mfnPIesnqrLPox5pj0lY4aksiAv" Margin="0,0,10,10" Grid.Row="1" Culture="da" >
+                <bm:Map.Center>
+                    <bm:Location Latitude="55.641910" Longitude="12.087845" />
+                </bm:Map.Center>
+
+                <bm:Pushpin>
+                    <bm:MapLayer.Position>
+                        <bm:Location Latitude="{Binding SelectedRestaurant.Latitude}" Longitude="{Binding SelectedRestaurant.Longitude}"  />
+                    </bm:MapLayer.Position>
+                </bm:Pushpin>
+            </bm:Map>
         </Grid>
     </Grid>
 </Page>

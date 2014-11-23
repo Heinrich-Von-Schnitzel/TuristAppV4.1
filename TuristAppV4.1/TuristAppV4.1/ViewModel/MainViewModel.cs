@@ -107,25 +107,25 @@ namespace TuristAppV4._1.ViewModel
 
         public MainViewModel()
         {
-            Kategori1 = new ObservableCollection<Restaurant>();         
-            Kategori1.Add(new Restaurant("McDonalds", "8", "http://www.mcdonalds.dk/", beskrivelse, "44 44 44 44", "../Assets/restaurant.jpeg"));
-            Kategori1.Add(new Restaurant("Burger King", "1", "http://www.burgerking.dk/", beskrivelse, "33 33 33 33", "../Assets/restaurant.jpeg"));
-            Kategori1.Add(new Restaurant("McDonalds", "8", "http://www.mcdonalds.dk/", beskrivelse, "44 44 44 44", "../Assets/restaurant.jpeg"));
+            Kategori1 = new ObservableCollection<Restaurant>();
+            Kategori1.Add(new Restaurant("McDonalds", "3", "http://www.mcdonalds.dk/", beskrivelse, "44 44 44 44", "../Assets/restaurant.jpeg", 55.634303, 12.073764));
+            Kategori1.Add(new Restaurant("Burger King", "1", "http://www.burgerking.dk/", beskrivelse, "33 33 33 33", "../Assets/restaurant.jpeg", 55.626591, 12.091798));
+            Kategori1.Add(new Restaurant("McDonalds", "4", "http://www.mcdonalds.dk/", beskrivelse, "44 44 44 44", "../Assets/restaurant.jpeg", 55.642303, 12.115755));
 
             Kategori2 = new ObservableCollection<Restaurant>();
-            Kategori2.Add(new Restaurant("Jensens Bøfshus", "4", "http://www.jensens.com/", beskrivelse, "88 88 88 88", "../Assets/restaurant.jpeg"));
-            Kategori2.Add(new Restaurant("Bryggegården", "8", "http://www.restaurantbryggergaarden.dk/", beskrivelse, "99 99 99 99", "../Assets/restaurant.jpeg"));
-            Kategori2.Add(new Restaurant("Jensens Bøfshus", "4", "http://www.jensens.com/", beskrivelse, "88 88 88 88", "../Assets/restaurant.jpeg"));
-            Kategori2.Add(new Restaurant("Bryggegården", "8", "http://www.restaurantbryggergaarden.dk/", beskrivelse, "99 99 99 99", "../Assets/restaurant.jpeg"));
+            Kategori2.Add(new Restaurant("Jensens Bøfshus", "4", "http://www.jensens.com/", beskrivelse, "88 88 88 88", "../Assets/restaurant.jpeg", 55.640808, 12.076909));
+            Kategori2.Add(new Restaurant("Bryggegården", "3", "http://www.restaurantbryggergaarden.dk/", beskrivelse, "99 99 99 99", "../Assets/restaurant.jpeg", 55.641169, 12.084252));
+            Kategori2.Add(new Restaurant("Jensens Bøfshus", "4", "http://www.jensens.com/", beskrivelse, "88 88 88 88", "../Assets/restaurant.jpeg", 55.640808, 12.076909));
+            Kategori2.Add(new Restaurant("Bryggegården", "1", "http://www.restaurantbryggergaarden.dk/", beskrivelse, "99 99 99 99", "../Assets/restaurant.jpeg", 55.641169, 12.084252));
 
             Kategori3 = new ObservableCollection<Restaurant>();
-            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Prindsen", "7", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Prindsen", "7", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Prindsen", "7", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg"));
-            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg"));
+            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg", 55.640619, 12.090005));
+            Kategori3.Add(new Restaurant("Prindsen", "4", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg", 55.641140, 12.083443));
+            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg", 55.640619, 12.090005));
+            Kategori3.Add(new Restaurant("Prindsen", "2", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg", 55.641140, 12.083443));
+            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg",55.640619, 12.090005));
+            Kategori3.Add(new Restaurant("Prindsen", "4", "http://www.hotelprindsen.dk/", beskrivelse, "22 22 22 22", "../Assets/restaurant.jpeg", 55.641140, 12.083443));
+            Kategori3.Add(new Restaurant("Bone's", "5", "http://www.bones.dk/", beskrivelse, "11 11 11 11", "../Assets/restaurant.jpeg", 55.640619, 12.090005));
 
             _kategoriKatalog = new ObservableCollection<Katagori>();
             _kategoriKatalog.Add(new Katagori("Fastfood", Kategori1));
