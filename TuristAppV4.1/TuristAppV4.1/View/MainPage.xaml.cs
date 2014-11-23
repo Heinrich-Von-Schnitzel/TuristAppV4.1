@@ -51,7 +51,7 @@ namespace TuristAppV4._1
 
 
 
-        private async void gridView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void gridView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (gridView1.SelectedIndex > -1)
             {

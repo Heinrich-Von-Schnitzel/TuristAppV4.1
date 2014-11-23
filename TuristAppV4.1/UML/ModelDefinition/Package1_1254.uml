@@ -451,6 +451,42 @@
                 LastKnownLocation="UML.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="b25c005e-d947-4a33-aa87-d0e45310105a"
+            name="Latitude"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="712e1ffe-ba93-4345-b602-26cbb904a003"
+                LastKnownName="double"
+                LastKnownLocation="Package1_1254.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1b95d5a6-4cd2-4ae5-87a5-9dbb40e97a96"
+            name="Longtitude"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="712e1ffe-ba93-4345-b602-26cbb904a003"
+                LastKnownName="double"
+                LastKnownLocation="Package1_1254.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -481,6 +517,11 @@
       <undefinedType
         Id="2bea1ebb-4155-49f4-aa34-e684461b26e4"
         name="ObserableCollection&lt;Restaurant&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="712e1ffe-ba93-4345-b602-26cbb904a003"
+        name="double" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

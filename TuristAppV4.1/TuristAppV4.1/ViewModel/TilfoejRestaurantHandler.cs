@@ -68,12 +68,44 @@ namespace TuristAppV4._1.ViewModel
                 SelectedKategori.ListeAfRestauranter.Add(r);
             }
         }
+        public void CheckRestaurantNavn(string restaurantNavn)
+        {
+            if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30)
+            {
+                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
+            }
+        }
+        public void CheckTelefon(string telefon)
+        {
+            if (String.IsNullOrEmpty(telefon) || (telefon.Length >= 9 || telefon.Length <= 7))
+            {
+                throw new ArgumentException("Telefon skal være 8 tegn");
+            }
+        }
+        public void CheckBeskrivelse(string beskrivelse)
+        {
+            if (String.IsNullOrEmpty(beskrivelse) || beskrivelse.Length > 500 || beskrivelse.Length < 20)
+            {
+                throw new ArgumentException("beskrivelse skal indholde tegn");
+            }
+
+        }
+
+        public void CheckBedømmelse(string bedømmelse)
+        {
+            if (String.IsNullOrEmpty(bedømmelse))
+            {
+                throw new ArgumentException("bedømmelse");
+            }
+        }
+
 
         public string RestaurantNavn
         {
             get { return _restaurantNavn; }
             set
             {
+                CheckRestaurantNavn(value);
                 _restaurantNavn = value;
             }
         }
@@ -81,7 +113,11 @@ namespace TuristAppV4._1.ViewModel
         public string Bedømmelse
         {
             get { return _bedømmelse; }
-            set { _bedømmelse = value; }
+            set
+            {
+                CheckBedømmelse(value);
+                _bedømmelse = value;
+            }
         }
 
         public string Hjemmeside
@@ -95,6 +131,7 @@ namespace TuristAppV4._1.ViewModel
             get { return _telefon; }
             set
             {
+                CheckTelefon(value);
                 _telefon = value;    
             }
         }
@@ -104,6 +141,7 @@ namespace TuristAppV4._1.ViewModel
             get { return _beskrivelse; }
             set
             {
+                CheckBeskrivelse(value);
                 _beskrivelse = value;
             }
         }
