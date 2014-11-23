@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TuristAppV4._1.ViewModel;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
-namespace TuristAppV4._1Tests1.ViewModel
+namespace TuristAppV4._1Tests1
 {
     [TestClass()]
     public class TilfoejRestaurantHandlerTests
