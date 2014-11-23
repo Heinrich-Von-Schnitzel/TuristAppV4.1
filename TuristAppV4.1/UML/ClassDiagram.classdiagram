@@ -270,6 +270,18 @@
                     <referencedTypeMoniker Id="15fbc77d-f833-466e-95a0-100b0327db0e" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
+                <property Id="ca386e82-e6c4-425c-85a9-5a07a168fc57" name="Latitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b25c005e-d947-4a33-aa87-d0e45310105a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="429aa12e-a25b-4351-8a3e-f9377eff276d" name="Longtitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1b95d5a6-4cd2-4ae5-87a5-9dbb40e97a96" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
                 <operation Id="202a5e6c-00fa-413c-a23a-8108feefba3a" name="OpretRestaurant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -354,6 +366,18 @@
                   <elementDefinition Id="4623961d-5749-4865-a596-be1333090457" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="47e2269c-c425-401b-a0bd-5c34e68d6aeb" name="Latitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0f5705b8-f38f-417b-a0e5-42c3ca60e3c7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="a2d8a689-4783-4535-b4c9-d24b9e7ca928" name="Longitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="55507ae0-f1e5-4531-8bdd-81de360c32ce" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -442,6 +466,11 @@
     <packageHasNamedElement>
       <referencedType Id="e4acdfd3-65c9-47dd-83d8-edc7ce49d1ea" name="ObserableCollection" isAbstract="false" isLeaf="false" cachedFullName="ObserableCollection">
         <elementDefinition Id="20ae416b-2530-4de1-bbf3-c3780f64dc6c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="712e1ffe-ba93-4345-b602-26cbb904a003" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

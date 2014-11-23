@@ -224,7 +224,7 @@
           </lifeline>
         </lifelines>
         <messages>
-          <message Id="72470f0e-d3db-492b-95eb-620001dcc2fd" name="OpretRestaurant(navn, bedømmelse, hjemmeside, telefon, beskrivelse, billede) " messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="72470f0e-d3db-492b-95eb-620001dcc2fd" name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude) " messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
             <elementDefinition Id="1c437e7e-6b43-47ff-ac00-c944d28b6dc5" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="1888712c-e8b7-4ca7-ad4c-b61827b062f6" LastKnownName="MessageOccurrenceSpecification19" />
@@ -233,7 +233,7 @@
               <messageOccurrenceSpecificationMoniker Id="4c204a0c-1591-4c28-8f27-8944f9718928" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
-          <message Id="ab03b134-45a9-4c38-ad7d-65c06ed4ce3b" name="OpretRestaurant(parameter)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="ab03b134-45a9-4c38-ad7d-65c06ed4ce3b" name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="8229cb72-44d7-45d1-ac28-2631d359b97b" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="2c312d65-b225-40ab-be48-8324eff9560c" LastKnownName="MessageOccurrenceSpecification47" />

@@ -196,6 +196,28 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="50a99285-bfb0-483c-91fd-27c17fe4fd2e"
+            name="Latitude"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="399eed59-e8be-4590-943e-ade1b4c89290"
+            name="Longitude"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1415,7 +1437,7 @@
         <messages>
           <message
             Id="1c437e7e-6b43-47ff-ac00-c944d28b6dc5"
-            name="OpretRestaurant(navn, bedømmelse, hjemmeside, telefon, beskrivelse, billede) "
+            name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude) "
             messageKind="Complete"
             messageSort="AsynchCall"
             createSelfMessage="false">
@@ -1434,7 +1456,7 @@
           </message>
           <message
             Id="8229cb72-44d7-45d1-ac28-2631d359b97b"
-            name="OpretRestaurant(parameter)"
+            name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
