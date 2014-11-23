@@ -15,6 +15,8 @@ namespace TuristAppV4._1.ViewModel
         private string _beskrivelse; // twoway bindes til textbox
         private string _telefon; // twoway bindes til textbox
         private string _billede;
+        private double _latitude;
+        private double _longitude;
         private Katagori _selectedKategori;
 
         public async void TilfoejRestaurant()       
@@ -62,50 +64,8 @@ namespace TuristAppV4._1.ViewModel
             }
             else
             {
-                Restaurant r = new Restaurant(_restaurantNavn, _bedømmelse, _hjemmeside, _beskrivelse, _telefon, _billede);
+                Restaurant r = new Restaurant(_restaurantNavn, _bedømmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _latitude, _longitude);
                 SelectedKategori.ListeAfRestauranter.Add(r);
-            }
-        }
-        public async void CheckRestaurantNavn(string navn)
-        {
-            if (String.IsNullOrEmpty(RestaurantNavn))
-            {
-                MessageDialog navnfejl = new MessageDialog("Navnet skal være udfyldt");
-                await navnfejl.ShowAsync();
-            }
-            if (RestaurantNavn.Length >= 30)
-            {     
-                MessageDialog navnfejl = new MessageDialog("Navnet må højst være 30 tegn");
-                await navnfejl.ShowAsync();
-            }
-        }
-        public void CheckRestaurantNavn1(string restaurantNavn)
-        {
-            if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30)
-            {
-                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
-            }
-        }
-        public async void CheckRestaurantTelefon(string telefon)
-        {
-            if (telefon.Length != 8)
-            {
-                MessageDialog telefonfejl = new MessageDialog("Telefon skal være 8 tegn");
-                await telefonfejl.ShowAsync();
-            }
-        }
-        public async void CheckBeskrivelse(string beskrivelse)
-        {
-            if (String.IsNullOrEmpty(beskrivelse))
-            {
-                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen skal være udfyldt og må være 500 tegn");
-                await beskrivelsefejl.ShowAsync();
-            }
-            if (beskrivelse.Length >= 500)
-            {
-                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen skal være udfyldt og må være 500 tegn");
-                await beskrivelsefejl.ShowAsync();
-                
             }
         }
 
@@ -114,7 +74,6 @@ namespace TuristAppV4._1.ViewModel
             get { return _restaurantNavn; }
             set
             {
-                CheckRestaurantNavn1(value);
                 _restaurantNavn = value;
             }
         }
@@ -136,7 +95,6 @@ namespace TuristAppV4._1.ViewModel
             get { return _telefon; }
             set
             {
-               // CheckRestaurantTelefon(value);
                 _telefon = value;    
             }
         }
@@ -146,7 +104,6 @@ namespace TuristAppV4._1.ViewModel
             get { return _beskrivelse; }
             set
             {
-              //  CheckBeskrivelse(value);
                 _beskrivelse = value;
             }
         }
@@ -155,6 +112,18 @@ namespace TuristAppV4._1.ViewModel
         {
             get { return _billede; }
             set { _billede = value; }
+        }
+
+        public double Latitude
+        {
+            get { return _latitude; }
+            set { _latitude = value; }
+        }
+
+        public double Longitude
+        {
+            get { return _longitude; }
+            set { _longitude = value; }
         }
 
         public Katagori SelectedKategori

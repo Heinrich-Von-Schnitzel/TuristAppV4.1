@@ -19,7 +19,7 @@
     </Page.BottomAppBar>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="ms-appx:///Assets/bg.png" Stretch="Fill"/>
+            <ImageBrush ImageSource="ms-appx:///Assets/bg.png" Stretch="None"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="110*"/>

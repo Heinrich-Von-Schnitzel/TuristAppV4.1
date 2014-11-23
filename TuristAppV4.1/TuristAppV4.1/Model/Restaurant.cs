@@ -10,28 +10,14 @@ namespace TuristAppV4._1.Model
         private string _beskrivelse;
         private string _telefon;
         private string _billede;
-
-        public void CheckRestaurantNavn(string navn)
-        {
-            if (navn.Length < 2)
-            {
-                throw new ArgumentException("Navnet er for kort. Det skal være længere end 2 tegn");
-            }
-        }
-        public void CheckRestaurantTelefon(string telefon)
-        {
-            if (telefon.Length == 8)
-            {
-                throw new ArgumentException("Telefon nr. er for kort. Det skal være på 8 tegn");
-            }
-        }
+        private double _latitude;
+        private double _longitude;
 
         public string Telefon
         {
             get { return _telefon; }
             set
             {
-                CheckRestaurantTelefon(value);
                 _telefon = value;
             }
         }
@@ -59,7 +45,6 @@ namespace TuristAppV4._1.Model
             get { return _restaurantNavn; }
             set
             {
-                CheckRestaurantNavn(value);
                 _restaurantNavn = value;
             }
         }
@@ -68,8 +53,18 @@ namespace TuristAppV4._1.Model
             get { return _billede; }
             set { _billede = value; }
         }
+        public double Latitude
+        {
+            get { return _latitude; }
+            set { _latitude = value; }
+        }
+        public double Longitude
+        {
+            get { return _longitude; }
+            set { _longitude = value; }
+        }
 
-        public Restaurant(string restaurantNavn, string bedømmelse, string hjemmeside, string beskrivelse, string telefon, string billede)
+        public Restaurant(string restaurantNavn, string bedømmelse, string hjemmeside, string beskrivelse, string telefon, string billede, double latitude, double longitude)
         {
             _restaurantNavn = restaurantNavn;
             _bedømmelse = bedømmelse;
@@ -77,6 +72,8 @@ namespace TuristAppV4._1.Model
             _beskrivelse = beskrivelse;
             _telefon = telefon;
             _billede = billede;
+            _latitude = latitude;
+            _longitude = longitude;
         }
 
         public override string ToString()
