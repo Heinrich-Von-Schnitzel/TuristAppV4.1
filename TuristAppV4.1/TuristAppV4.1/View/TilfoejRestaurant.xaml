@@ -75,7 +75,7 @@
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
             <TextBox TextWrapping="Wrap" PlaceholderText="Restaurantnavn" Text="{Binding TilfoejRestaurantHandler.RestaurantNavn, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="1" Grid.ColumnSpan="2"/>
-            <ComboBox x:Name="comboBox1" ItemsSource="{Binding NrListe1}" SelectedItem="{Binding TilfoejRestaurantHandler.Bedoemmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="comboBox1" ItemsSource="{Binding NrListe1}" SelectedItem="{Binding TilfoejRestaurantHandler.Bedoemmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg Bedoemmelse" Grid.ColumnSpan="2"/>
             
             <TextBox TextWrapping="Wrap" PlaceholderText="Beskrivelse" Text="{Binding TilfoejRestaurantHandler.Beskrivelse, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="3" Grid.ColumnSpan="2"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Telefon" Text="{Binding TilfoejRestaurantHandler.Telefon, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="4" Grid.ColumnSpan="2"/>

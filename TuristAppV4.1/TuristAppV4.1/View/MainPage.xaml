@@ -22,9 +22,9 @@
             <ImageBrush ImageSource="ms-appx:///Assets/bg.png" Stretch="None"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="110*"/>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="590*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="294*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="455*"/>
@@ -79,7 +79,7 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>-->
-        <TextBlock Margin="50,15,0,0" Grid.Row="1" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[0].KategoriNavn}" />
+        <TextBlock Margin="55,15,0,0" Grid.Row="1" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[0].KategoriNavn}" />
         <TextBlock Margin="25,15,0,0" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[1].KategoriNavn}" />
         <TextBlock Margin="5,15,0,0" Grid.Row="1" Grid.Column="2" TextWrapping="Wrap" FontSize="40" Text="{Binding KategoriKatalog[2].KategoriNavn}" />
     </Grid>
