@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="cc78b2f4-de16-4cbd-813c-8951a4bf1979" name="SequenceDiagram" linkedPackageId="afd0ecba-f258-4a3d-b80e-ec57e1405198" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="cc78b2f4-de16-4cbd-813c-8951a4bf1979" name="SequenceDiagram" linkedPackageId="afd0ecba-f258-4a3d-b80e-ec57e1405198" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="1029e9dd-383c-494a-9a29-0b6232fd4534" name="vælg information / restaurant" isAbstract="false" isLeaf="false" cachedFullName="UML::vælg information / restaurant">
@@ -224,7 +224,7 @@
           </lifeline>
         </lifelines>
         <messages>
-          <message Id="72470f0e-d3db-492b-95eb-620001dcc2fd" name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude) " messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="72470f0e-d3db-492b-95eb-620001dcc2fd" name="OpretRestaurant(restaurantNavn, bedoemmelse, hjemmeside, beskrivelse, telefon, billede, breddegrad, laengdegrad" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
             <elementDefinition Id="1c437e7e-6b43-47ff-ac00-c944d28b6dc5" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="1888712c-e8b7-4ca7-ad4c-b61827b062f6" LastKnownName="MessageOccurrenceSpecification19" />
@@ -233,7 +233,7 @@
               <messageOccurrenceSpecificationMoniker Id="4c204a0c-1591-4c28-8f27-8944f9718928" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
-          <message Id="ab03b134-45a9-4c38-ad7d-65c06ed4ce3b" name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="ab03b134-45a9-4c38-ad7d-65c06ed4ce3b" name="OpretRestaurant(restaurantNavn, bedoemmelse, hjemmeside, beskrivelse, telefon, billede, breddegrad, laengdegrad" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="8229cb72-44d7-45d1-ac28-2631d359b97b" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="2c312d65-b225-40ab-be48-8324eff9560c" LastKnownName="MessageOccurrenceSpecification47" />

@@ -75,14 +75,14 @@
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
             <TextBox TextWrapping="Wrap" PlaceholderText="Restaurantnavn" Text="{Binding TilfoejRestaurantHandler.RestaurantNavn, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="1" Grid.ColumnSpan="2"/>
-            <ComboBox x:Name="comboBox1" ItemsSource="{Binding NrListe1}" SelectedItem="{Binding TilfoejRestaurantHandler.Bedømmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="comboBox1" ItemsSource="{Binding NrListe1}" SelectedItem="{Binding TilfoejRestaurantHandler.Bedoemmelse, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="2" PlaceholderText="Vælg bedømmelse" Grid.ColumnSpan="2"/>
             
             <TextBox TextWrapping="Wrap" PlaceholderText="Beskrivelse" Text="{Binding TilfoejRestaurantHandler.Beskrivelse, Mode=TwoWay}" Margin="40 0 40 5" Grid.Row="3" Grid.ColumnSpan="2"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Telefon" Text="{Binding TilfoejRestaurantHandler.Telefon, Mode=TwoWay}" Margin="40,0,40,5" Grid.Row="4" Grid.ColumnSpan="2"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Hjemmeside" Text="{Binding TilfoejRestaurantHandler.Hjemmeside, Mode=TwoWay}" Grid.Row="5" Margin="40,0,40,5" Grid.ColumnSpan="2"/>
             <TextBox TextWrapping="Wrap" PlaceholderText="Billede" Text="{Binding TilfoejRestaurantHandler.Billede, Mode=TwoWay}" Grid.Row="6" Margin="40,0,40,5" Grid.ColumnSpan="2"/>
-            <TextBox TextWrapping="Wrap" PlaceholderText="Breddegrad" Text="{Binding TilfoejRestaurantHandler.Latitude, Mode=TwoWay}" Grid.Row="7" Margin="40,0,5,5"/>
-            <TextBox TextWrapping="Wrap" PlaceholderText="Breddegrad" Text="{Binding TilfoejRestaurantHandler.Longitude, Mode=TwoWay}" Grid.Row="7" Margin="5,0,40,5" Grid.Column="1"/>
+            <TextBox TextWrapping="Wrap" PlaceholderText="Breddegrad" Text="{Binding TilfoejRestaurantHandler.Breddegrad, Mode=TwoWay}" Grid.Row="7" Margin="40,0,5,5"/>
+            <TextBox TextWrapping="Wrap" PlaceholderText="Breddegrad" Text="{Binding TilfoejRestaurantHandler.Laengdegrad, Mode=TwoWay}" Grid.Row="7" Margin="5,0,40,5" Grid.Column="1"/>
             
             <ComboBox PlaceholderText="Vælg en kategori" ItemsSource="{Binding KategoriKatalog}" SelectedItem="{Binding TilfoejRestaurantHandler.SelectedKategori, Mode=TwoWay}" Margin="40,0,40,0" Grid.Row="8" Grid.ColumnSpan="2"/>
 

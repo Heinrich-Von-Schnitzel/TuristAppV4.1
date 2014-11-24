@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="9aac7550-e19c-4c03-bd95-4b9cebc0c498"
   name="UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -198,7 +198,7 @@
             isComposite="false" />
           <property
             Id="50a99285-bfb0-483c-91fd-27c17fe4fd2e"
-            name="Latitude"
+            name="Breddegrad "
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -209,7 +209,7 @@
             isComposite="false" />
           <property
             Id="399eed59-e8be-4590-943e-ade1b4c89290"
-            name="Longitude"
+            name="Længdegrad"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1437,7 +1437,7 @@
         <messages>
           <message
             Id="1c437e7e-6b43-47ff-ac00-c944d28b6dc5"
-            name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude) "
+            name="OpretRestaurant(restaurantNavn, bedoemmelse, hjemmeside, beskrivelse, telefon, billede, breddegrad, laengdegrad"
             messageKind="Complete"
             messageSort="AsynchCall"
             createSelfMessage="false">
@@ -1456,7 +1456,7 @@
           </message>
           <message
             Id="8229cb72-44d7-45d1-ac28-2631d359b97b"
-            name="OpretRestaurant(restaurantNavn, bedømmelse, hjemmeside, beskrivelse, telefon, billede, latitude, longitude)"
+            name="OpretRestaurant(restaurantNavn, bedoemmelse, hjemmeside, beskrivelse, telefon, billede, breddegrad, laengdegrad"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b3f030e7-38f1-4544-b08a-47cb0a1ca853" name="ClassDiagram" linkedPackageId="317857f9-5e0a-421c-b2d2-9aac0ff8185c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
@@ -246,7 +246,7 @@
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
-                <property Id="8a7f66a3-bf48-4799-ad1d-d422c272eedf" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="8a7f66a3-bf48-4799-ad1d-d422c272eedf" name="Bedoemmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="4a1de740-1322-4ca0-99e1-bf3ccc3b9e4b" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
@@ -270,13 +270,13 @@
                     <referencedTypeMoniker Id="15fbc77d-f833-466e-95a0-100b0327db0e" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
-                <property Id="ca386e82-e6c4-425c-85a9-5a07a168fc57" name="Latitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="ca386e82-e6c4-425c-85a9-5a07a168fc57" name="Breddegrad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="b25c005e-d947-4a33-aa87-d0e45310105a" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
                   </type_NamedElement>
                 </property>
-                <property Id="429aa12e-a25b-4351-8a3e-f9377eff276d" name="Longtitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="429aa12e-a25b-4351-8a3e-f9377eff276d" name="Laengdegrad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="1b95d5a6-4cd2-4ae5-87a5-9dbb40e97a96" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
@@ -350,7 +350,7 @@
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
-                <property Id="a6c70a94-6f5c-45cb-8b73-0069637bb2b4" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="a6c70a94-6f5c-45cb-8b73-0069637bb2b4" name="Bedoemmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="6dbb90e7-afa0-4aa2-90c5-07fe88ee5dea" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
@@ -368,13 +368,13 @@
                     <referencedTypeMoniker Id="d5f5e4a8-a29a-466e-a9d7-15f7f99d0d34" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
-                <property Id="47e2269c-c425-401b-a0bd-5c34e68d6aeb" name="Latitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="47e2269c-c425-401b-a0bd-5c34e68d6aeb" name="Breddegrad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="0f5705b8-f38f-417b-a0e5-42c3ca60e3c7" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />
                   </type_NamedElement>
                 </property>
-                <property Id="a2d8a689-4783-4535-b4c9-d24b9e7ca928" name="Longitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="a2d8a689-4783-4535-b4c9-d24b9e7ca928" name="Laengdegrad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="55507ae0-f1e5-4531-8bdd-81de360c32ce" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f9239a20-5020-42ee-aa24-8eba3f172d0e" LastKnownName="double" />

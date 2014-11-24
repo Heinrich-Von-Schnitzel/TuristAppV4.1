@@ -10,13 +10,13 @@ namespace TuristAppV4._1.ViewModel
     public class TilfoejRestaurantHandler
     {
         private string _restaurantNavn; // twoway bindes til textbox
-        private string _bedømmelse; // twoway bindes til textbox
+        private string _bedoemmelse; // twoway bindes til textbox
         private string _hjemmeside; // twoway bindes til textbox
         private string _beskrivelse; // twoway bindes til textbox
         private string _telefon; // twoway bindes til textbox
         private string _billede;
-        private double _latitude;
-        private double _longitude;
+        private double _breddegrad;
+        private double _laengdegrad;
         private Katagori _selectedKategori;
 
         public async void TilfoejRestaurant()       
@@ -32,10 +32,10 @@ namespace TuristAppV4._1.ViewModel
                 MessageDialog navnfejl = new MessageDialog("Restaurantnavnet må højst bestå af 30 tegn", "Ups! Der skete en fejl!");
                 await navnfejl.ShowAsync();
             }
-            else if (String.IsNullOrEmpty(_bedømmelse))
+            else if (String.IsNullOrEmpty(_bedoemmelse))
             {
-                MessageDialog bedømmelsefejl = new MessageDialog("Vælg en bedømmelse", "Ups! Der skete en fejl!");
-                await bedømmelsefejl.ShowAsync();
+                MessageDialog bedoemmelsefejl = new MessageDialog("Vælg en bedømmelse", "Ups! Der skete en fejl!");
+                await bedoemmelsefejl.ShowAsync();
             }
             else if (String.IsNullOrEmpty(_telefon))
             {
@@ -64,7 +64,7 @@ namespace TuristAppV4._1.ViewModel
             }
             else
             {
-                Restaurant r = new Restaurant(_restaurantNavn, _bedømmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _latitude, _longitude);
+                Restaurant r = new Restaurant(_restaurantNavn, _bedoemmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _breddegrad, _laengdegrad);
                 SelectedKategori.ListeAfRestauranter.Add(r);
             }
         }
@@ -91,9 +91,9 @@ namespace TuristAppV4._1.ViewModel
 
         }
 
-        public void CheckBedømmelse(string bedømmelse)
+        public void CheckBedoemmelse(string bedoemmelse)
         {
-            if (String.IsNullOrEmpty(bedømmelse))
+            if (String.IsNullOrEmpty(bedoemmelse))
             {
                 throw new ArgumentException("bedømmelse");
             }
@@ -110,13 +110,13 @@ namespace TuristAppV4._1.ViewModel
             }
         }
 
-        public string Bedømmelse
+        public string Bedoemmelse
         {
-            get { return _bedømmelse; }
+            get { return _bedoemmelse; }
             set
             {
-                CheckBedømmelse(value);
-                _bedømmelse = value;
+                CheckBedoemmelse(value);
+                _bedoemmelse = value;
             }
         }
 
@@ -152,16 +152,16 @@ namespace TuristAppV4._1.ViewModel
             set { _billede = value; }
         }
 
-        public double Latitude
+        public double Breddegrad
         {
-            get { return _latitude; }
-            set { _latitude = value; }
+            get { return _breddegrad; }
+            set { _breddegrad = value; }
         }
 
-        public double Longitude
+        public double Laengdegrad
         {
-            get { return _longitude; }
-            set { _longitude = value; }
+            get { return _laengdegrad; }
+            set { _laengdegrad = value; }
         }
 
         public Katagori SelectedKategori

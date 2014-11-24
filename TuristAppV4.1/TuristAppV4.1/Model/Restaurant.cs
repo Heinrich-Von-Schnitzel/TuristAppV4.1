@@ -10,8 +10,8 @@ namespace TuristAppV4._1.Model
         private string _beskrivelse;
         private string _telefon;
         private string _billede;
-        private double _latitude;
-        private double _longitude;
+        private double _breddegrad;
+        private double _laengdegrad;
 
         public string Telefon
         {
@@ -53,18 +53,18 @@ namespace TuristAppV4._1.Model
             get { return _billede; }
             set { _billede = value; }
         }
-        public double Latitude
+        public double Breddegrad
         {
-            get { return _latitude; }
-            set { _latitude = value; }
+            get { return _breddegrad; }
+            set { _breddegrad = value; }
         }
-        public double Longitude
+        public double Laengdegrad
         {
-            get { return _longitude; }
-            set { _longitude = value; }
+            get { return _laengdegrad; }
+            set { _laengdegrad = value; }
         }
 
-        public Restaurant(string restaurantNavn, string bedømmelse, string hjemmeside, string beskrivelse, string telefon, string billede, double latitude, double longitude)
+        public Restaurant(string restaurantNavn, string bedømmelse, string hjemmeside, string beskrivelse, string telefon, string billede, double breddegrad, double laengdegrad)
         {
             _restaurantNavn = restaurantNavn;
             _bedømmelse = bedømmelse;
@@ -72,8 +72,8 @@ namespace TuristAppV4._1.Model
             _beskrivelse = beskrivelse;
             _telefon = telefon;
             _billede = billede;
-            _latitude = latitude;
-            _longitude = longitude;
+            _breddegrad = breddegrad;
+            _laengdegrad = laengdegrad;
         }
 
         public override string ToString()
