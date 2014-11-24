@@ -20,83 +20,6 @@ namespace TuristAppV4._1Tests1
         }
 
         [TestMethod()]
-        public void CheckTelefonTest()
-        {
-            string telefon = "";
-            for (int i = 0; i < 9; i++)
-            {
-                telefon = telefon + "a";
-            }
-
-            string telefon2 = "";
-            for (int i = 0; i < 8; i++)
-            {
-                telefon2 = telefon2 + "a";
-            }
-
-            string telefon3 = "";
-            for (int i = 0; i < 7; i++)
-            {
-                telefon3 = telefon3 + "a";
-            }
-
-            string telefon4 = "";
-
-            string telefon5 = null;
-
-
-            _handler.Telefon = telefon2;                  // hvis telefon nummert er på ni cifre
-            Assert.AreEqual(telefon2, _handler.Telefon);
-            try
-            {
-                _handler.Telefon = telefon;
-                Assert.Fail();
-            }
-            catch (ArgumentException ex)
-            {
-
-                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
-            }
-
-            _handler.Telefon = telefon2;
-            Assert.AreEqual(telefon2, _handler.Telefon); // hvis telefon nummert er på syv cifre 
-            try
-            {
-                _handler.Telefon = telefon3;
-                Assert.Fail();
-            }
-            catch (ArgumentException ex)
-            {
-
-                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
-            }
-            _handler.Telefon = telefon2;                     // hvis telefon nummert er tomt
-            Assert.AreEqual(telefon2, _handler.Telefon);
-            try
-            {
-                _handler.Telefon = telefon4;
-                Assert.Fail();
-            }
-            catch (ArgumentException ex)
-            {
-
-                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
-            }
-
-            _handler.Telefon = telefon2;                       // hvis telefon nummert er null
-            Assert.AreEqual(telefon2, _handler.Telefon);
-            try
-            {
-                _handler.Telefon = telefon5;
-                Assert.Fail();
-            }
-            catch (ArgumentException ex)
-            {
-                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
-            }
-        }
-
-        [TestMethod()]
         public void CheckRestaurantNavnTest()
         {
             string navn = "";
@@ -122,7 +45,7 @@ namespace TuristAppV4._1Tests1
                 navn5 = navn5 + "a";
             }
 
-            _handler.RestaurantNavn = navn;          // navnet er tomt
+            _handler.RestaurantNavn = navn; // navnet er tomt
             Assert.AreEqual(navn, _handler.RestaurantNavn);
 
             try
@@ -135,7 +58,7 @@ namespace TuristAppV4._1Tests1
                 Assert.AreEqual("Restaurantnavnet er null, tomt eller over 30 tegn", ex.Message);
             }
 
-            _handler.RestaurantNavn = navn;               // navnet består af over 30 bogstaver
+            _handler.RestaurantNavn = navn; // navnet består af over 30 bogstaver
             Assert.AreEqual(navn, _handler.RestaurantNavn);
             try
             {
@@ -147,7 +70,7 @@ namespace TuristAppV4._1Tests1
 
                 Assert.AreEqual("Restaurantnavnet er null, tomt eller over 30 tegn", ex.Message);
             }
-            _handler.RestaurantNavn = navn;        // restaurant navnet er nul
+            _handler.RestaurantNavn = navn; // restaurant navnet er nul
             Assert.AreEqual(navn, _handler.RestaurantNavn);
             try
             {
@@ -160,6 +83,28 @@ namespace TuristAppV4._1Tests1
                 Assert.AreEqual("Restaurantnavnet er null, tomt eller over 30 tegn", ex.Message);
             }
 
+        }
+
+
+        [TestMethod()]
+        public void CheckBedoemmelseTest()
+        {
+            string bedoemmelse = "1";
+
+            string bedoemmelse2 = null;
+
+            _handler.Bedoemmelse = bedoemmelse;
+            Assert.AreEqual(bedoemmelse, _handler.Bedoemmelse);
+            try
+            {
+                _handler.Bedoemmelse = bedoemmelse2;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("bedømmelse", ex.Message);
+            }
 
         }
 
@@ -201,7 +146,7 @@ namespace TuristAppV4._1Tests1
 
             }
 
-            _handler.Beskrivelse = beskrivelse;         // hvis restaurant beskrivelsen er over 500 tegn
+            _handler.Beskrivelse = beskrivelse; // hvis restaurant beskrivelsen er over 500 tegn
             Assert.AreEqual(beskrivelse, _handler.Beskrivelse);
             try
             {
@@ -214,7 +159,7 @@ namespace TuristAppV4._1Tests1
                 Assert.AreEqual("beskrivelse skal indholde tegn", ex.Message);
             }
 
-            _handler.Beskrivelse = beskrivelse;            // hvis navnet er null
+            _handler.Beskrivelse = beskrivelse; // hvis navnet er null
             Assert.AreEqual(beskrivelse, _handler.Beskrivelse);
             try
             {
@@ -228,7 +173,7 @@ namespace TuristAppV4._1Tests1
             }
 
 
-            _handler.Beskrivelse = beskrivelse;               // hvis beskrivelsen er under 20
+            _handler.Beskrivelse = beskrivelse; // hvis beskrivelsen er under 20
             Assert.AreEqual(beskrivelse, _handler.Beskrivelse);
             try
             {
@@ -239,30 +184,85 @@ namespace TuristAppV4._1Tests1
             {
 
                 Assert.AreEqual("beskrivelse skal indholde tegn", ex.Message);
-            }  
-                                    // hvis beskrivelsen består
+            }
+            // hvis beskrivelsen består
         }
 
-            [TestMethod()]
-            public void CheckBedømmelseTest()
+        [TestMethod()]
+        public void CheckTelefonTest()
+        {
+            string telefon = "";
+            for (int i = 0; i < 9; i++)
             {
-                string bedømmelse = "1";
+                telefon = telefon + "a";
+            }
 
-                string bedømmelse2 = null;
-              
-                _handler.Bedømmelse = bedømmelse;
-                Assert.AreEqual(bedømmelse, _handler.Bedømmelse);
-                try
-                {
-                    _handler.Bedømmelse = bedømmelse2; 
-                    Assert.Fail();
-                }
-                catch (ArgumentException ex )
-                {
+            string telefon2 = "";
+            for (int i = 0; i < 8; i++)
+            {
+                telefon2 = telefon2 + "a";
+            }
 
-                    Assert.AreEqual("bedømmelse", ex.Message );
-                }
+            string telefon3 = "";
+            for (int i = 0; i < 7; i++)
+            {
+                telefon3 = telefon3 + "a";
+            }
 
+            string telefon4 = "";
+
+            string telefon5 = null;
+
+
+            _handler.Telefon = telefon2; // hvis telefon nummert er på ni cifre
+            Assert.AreEqual(telefon2, _handler.Telefon);
+            try
+            {
+                _handler.Telefon = telefon;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
+            }
+
+            _handler.Telefon = telefon2;
+            Assert.AreEqual(telefon2, _handler.Telefon); // hvis telefon nummert er på syv cifre 
+            try
+            {
+                _handler.Telefon = telefon3;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
+            }
+            _handler.Telefon = telefon2; // hvis telefon nummert er tomt
+            Assert.AreEqual(telefon2, _handler.Telefon);
+            try
+            {
+                _handler.Telefon = telefon4;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
+            }
+
+            _handler.Telefon = telefon2; // hvis telefon nummert er null
+            Assert.AreEqual(telefon2, _handler.Telefon);
+            try
+            {
+                _handler.Telefon = telefon5;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+                Assert.AreEqual("Telefon skal være 8 tegn", ex.Message);
             }
         }
+    }
 }
