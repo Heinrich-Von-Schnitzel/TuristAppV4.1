@@ -75,11 +75,11 @@ namespace TuristAppV4._1.ViewModel
                 throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
             }
         }
-        public void CheckTelefon(string telefon)
+        public void CheckBedoemmelse(string bedoemmelse)
         {
-            if (String.IsNullOrEmpty(telefon) || (telefon.Length >= 9 || telefon.Length <= 7))
+            if (String.IsNullOrEmpty(bedoemmelse))
             {
-                throw new ArgumentException("Telefon skal være 8 tegn");
+                throw new ArgumentException("bedømmelse");
             }
         }
         public void CheckBeskrivelse(string beskrivelse)
@@ -90,14 +90,14 @@ namespace TuristAppV4._1.ViewModel
             }
 
         }
-
-        public void CheckBedoemmelse(string bedoemmelse)
+        public void CheckTelefon(string telefon)
         {
-            if (String.IsNullOrEmpty(bedoemmelse))
+            if (String.IsNullOrEmpty(telefon) || (telefon.Length >= 9 || telefon.Length <= 7))
             {
-                throw new ArgumentException("bedømmelse");
+                throw new ArgumentException("Telefon skal være 8 tegn");
             }
         }
+
 
 
         public string RestaurantNavn
