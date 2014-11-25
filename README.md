@@ -1,6 +1,6 @@
 TuristAppV4.1
 =============
-Version 4 af skoleprojekt på Datamatiker-uddannelsen - Erhvervsakademi Sjælland Roskilde.
+Version 4.1 af skoleprojekt på Datamatiker-uddannelsen - Erhvervsakademi Sjælland Roskilde.
 
 Bing Maps SDK
 =============
