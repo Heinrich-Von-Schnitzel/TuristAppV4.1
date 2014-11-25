@@ -34,7 +34,7 @@ namespace TuristAppV4._1.ViewModel
             }
             else if (String.IsNullOrEmpty(_bedoemmelse))
             {
-                MessageDialog bedoemmelsefejl = new MessageDialog("Vælg en bedømmelse", "Ups! Der skete en fejl!");
+                MessageDialog bedoemmelsefejl = new MessageDialog("Vælg en Bedoemmelse", "Ups! Der skete en fejl!");
                 await bedoemmelsefejl.ShowAsync();
             }
             else if (String.IsNullOrEmpty(_telefon))
@@ -79,7 +79,7 @@ namespace TuristAppV4._1.ViewModel
         {
             if (String.IsNullOrEmpty(bedoemmelse))
             {
-                throw new ArgumentException("bedømmelse");
+                throw new ArgumentException("Bedoemmelse");
             }
         }
         public void CheckBeskrivelse(string beskrivelse)

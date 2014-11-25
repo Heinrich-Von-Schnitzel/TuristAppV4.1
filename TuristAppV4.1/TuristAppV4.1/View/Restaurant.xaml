@@ -57,24 +57,25 @@
             <TextBlock x:Name="pageTitle" Text="{Binding SelectedRestaurant.RestaurantNavn}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <Grid Height="610" Margin="10,10,0,0" Grid.Row="1" Width="700" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid Margin="10,10,0,0" Grid.Row="1" Width="700" HorizontalAlignment="Left">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="100*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="268*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20">
-                <Run Text="Bedoemmelse: "/>
-                <Run Text="{Binding SelectedRestaurant.Bedømmelse}"/>
+                <Run Text="Bedømmelse: "/>
+                <Run Text="{Binding SelectedRestaurant.Bedoemmelse}"/>
             </TextBlock>
-            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding SelectedRestaurant.Beskrivelse}" FontSize="20" Grid.Row="1"/>
-            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" FontSize="20" Grid.Row="2">
+            <TextBlock Margin="40 0 0 0" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Grid.Row="1">
                 <Run Text="Telefonnummer: "/>
                 <Run Text="{Binding SelectedRestaurant.Telefon}"/>
             </TextBlock>
-            <HyperlinkButton Margin="25 0 0 0" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="Besøg hjemmeside" FontSize="20" Grid.Row="3"/>
+            <HyperlinkButton Margin="25,40,0,14" Foreground="white" HorizontalAlignment="Left" NavigateUri="{Binding SelectedRestaurant.Hjemmeside}" Content="Klik her for at besøge hjemmeside" FontSize="20" Grid.Row="1" FontWeight="Normal" Grid.RowSpan="2"/>
+            <TextBlock Margin="40,0,10,0" FontSize="18" Text="{Binding SelectedRestaurant.Beskrivelse}" TextWrapping="Wrap" Grid.Row="4"/>
+            <TextBlock Margin="40,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Om restauranten" FontSize="40"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Margin="710,10,0,0" Grid.Row="1">
             <Grid.RowDefinitions>

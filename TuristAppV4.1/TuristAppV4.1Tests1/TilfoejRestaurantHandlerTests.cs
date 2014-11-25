@@ -14,7 +14,7 @@ namespace TuristAppV4._1Tests1
 
         [TestInitialize]
 
-        public void beforeTest()
+        public void BeforeTest()
         {
             _handler = new TilfoejRestaurantHandler();
         }
@@ -103,7 +103,7 @@ namespace TuristAppV4._1Tests1
             catch (ArgumentException ex)
             {
 
-                Assert.AreEqual("bedømmelse", ex.Message);
+                Assert.AreEqual("Bedoemmelse", ex.Message);
             }
 
         }
@@ -112,7 +112,7 @@ namespace TuristAppV4._1Tests1
         public void CheckBeskrivelseTest()
         {
             string beskrivelse = "";
-            for (int i = 0; i < 400; i++)
+            for (int i = 0; i < 500; i++)
             {
                 beskrivelse = beskrivelse + "a";
             }

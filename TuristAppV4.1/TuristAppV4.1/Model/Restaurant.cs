@@ -5,7 +5,7 @@ namespace TuristAppV4._1.Model
     public class Restaurant
     {
         private string _restaurantNavn;
-        private string _bedømmelse;
+        private string _bedoemmelse;
         private string _hjemmeside;
         private string _beskrivelse;
         private string _telefon;
@@ -34,10 +34,10 @@ namespace TuristAppV4._1.Model
             set { _hjemmeside = value; }
         }
 
-        public string Bedømmelse
+        public string Bedoemmelse
         {
-            get { return _bedømmelse; }
-            set { _bedømmelse = value; }
+            get { return _bedoemmelse; }
+            set { _bedoemmelse = value; }
         }
 
         public string RestaurantNavn
@@ -64,10 +64,10 @@ namespace TuristAppV4._1.Model
             set { _laengdegrad = value; }
         }
 
-        public Restaurant(string restaurantNavn, string bedømmelse, string hjemmeside, string beskrivelse, string telefon, string billede, double breddegrad, double laengdegrad)
+        public Restaurant(string restaurantNavn, string bedoemmelse, string hjemmeside, string beskrivelse, string telefon, string billede, double breddegrad, double laengdegrad)
         {
             _restaurantNavn = restaurantNavn;
-            _bedømmelse = bedømmelse;
+            _bedoemmelse = bedoemmelse;
             _hjemmeside = hjemmeside;
             _beskrivelse = beskrivelse;
             _telefon = telefon;
@@ -78,7 +78,7 @@ namespace TuristAppV4._1.Model
 
         public override string ToString()
         {
-            return _bedømmelse;
+            return _bedoemmelse;
         }
     }
 }
