@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TuristAppV4._1.ViewModel;
+using TuristAppV4._1.Model;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 namespace TuristAppV4._1Tests1
 {
-    [TestClass()]
+    [TestClass]
     public class TilfoejRestaurantHandlerTests
     {
         private TilfoejRestaurantHandler _handler;
@@ -19,7 +21,7 @@ namespace TuristAppV4._1Tests1
             _handler = new TilfoejRestaurantHandler();
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckRestaurantNavnTest()
         {
             string navn = "";
@@ -85,8 +87,50 @@ namespace TuristAppV4._1Tests1
 
         }
 
+        [TestMethod]
+        public void CheckBreddegradTest()
+        {
+            double breddegrad = 0.0;
+            double breddegrad2 = 1.1;
 
-        [TestMethod()]
+            _handler.Breddegrad = breddegrad2;
+            Assert.AreEqual(breddegrad2, _handler.Breddegrad);
+
+            try
+            {
+                _handler.Breddegrad = breddegrad;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("breddegrad", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void CheckLaengdegradTest()
+        {
+            double laengdegrad = 0.0;
+
+            double laengdegrad2 = 1.1;
+
+            _handler.Laengdegrad = laengdegrad2;
+            Assert.AreEqual(laengdegrad2, _handler.Laengdegrad);
+
+            try
+            {
+                _handler.Laengdegrad = laengdegrad;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+
+                Assert.AreEqual("laengdegrad", ex.Message);
+            }
+
+        }
+
+        [TestMethod]
         public void CheckBedoemmelseTest()
         {
             string bedoemmelse = "1";
@@ -108,7 +152,7 @@ namespace TuristAppV4._1Tests1
 
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckBeskrivelseTest()
         {
             string beskrivelse = "";
@@ -188,7 +232,27 @@ namespace TuristAppV4._1Tests1
             // hvis beskrivelsen består
         }
 
-        [TestMethod()]
+        [TestMethod]
+        public void CheckKategoriTest()
+        {
+            Katagori kategori = null;
+            Katagori kategori2 = new Katagori("a", new ObservableCollection<Restaurant>());
+
+            _handler.SelectedKategori = kategori2;
+            Assert.AreEqual(kategori2, _handler.SelectedKategori);
+            try
+            {
+                _handler.SelectedKategori = kategori;
+                Assert.Fail();
+            }
+            catch (ArgumentException ex)
+            {
+                Assert.AreEqual("Vælg en kategori", ex.Message);
+
+            }
+        }
+
+        [TestMethod]
         public void CheckTelefonTest()
         {
             string telefon = "";

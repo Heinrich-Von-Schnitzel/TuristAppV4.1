@@ -27,6 +27,11 @@ namespace TuristAppV4._1.ViewModel
                 MessageDialog navnfejl = new MessageDialog("Restaurantnavnet skal være udfyldt", "Ups! Der skete en fejl!");
                 await navnfejl.ShowAsync();
             }
+            else if (_restaurantNavn.Length < 2)
+            {
+                MessageDialog navnfejl = new MessageDialog("Restaurantnavn skal være mindst 2 tegn");
+                await navnfejl.ShowAsync();
+            }
             else if (_restaurantNavn.Length >= 30)
             {
                 MessageDialog navnfejl = new MessageDialog("Restaurantnavnet må højst bestå af 30 tegn", "Ups! Der skete en fejl!");
@@ -70,9 +75,24 @@ namespace TuristAppV4._1.ViewModel
         }
         public void CheckRestaurantNavn(string restaurantNavn)
         {
-            if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30)
+            if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30 || restaurantNavn.Length < 2)
             {
-                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
+                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");   
+            }
+        }
+
+        public void CheckBreddegrad(double breddegrad)
+        {
+            if (breddegrad <= 0.0)
+            {
+                throw new ArgumentException("breddegrad");
+            }
+        }
+        public void CheckLaengdegrad(double laengdegrad)
+        {
+            if (laengdegrad <= 0.0)
+            {
+                throw new ArgumentException("laengdegrad");
             }
         }
         public void CheckBedoemmelse(string bedoemmelse)
@@ -95,6 +115,13 @@ namespace TuristAppV4._1.ViewModel
             if (String.IsNullOrEmpty(telefon) || (telefon.Length >= 9 || telefon.Length <= 7))
             {
                 throw new ArgumentException("Telefon skal være 8 tegn");
+            }
+        }
+        public void CheckKategori(Katagori kategori)
+        {
+            if (kategori == null)
+            {
+                throw new ArgumentException("Vælg en kategori");
             }
         }
 
@@ -155,19 +182,30 @@ namespace TuristAppV4._1.ViewModel
         public double Breddegrad
         {
             get { return _breddegrad; }
-            set { _breddegrad = value; }
+            set
+            {
+                CheckBreddegrad(value);
+                _breddegrad = value;
+            }
         }
 
         public double Laengdegrad
         {
             get { return _laengdegrad; }
-            set { _laengdegrad = value; }
+            set
+            {
+                CheckLaengdegrad(value);
+                _laengdegrad = value;
+            }
         }
 
         public Katagori SelectedKategori
         {
             get { return _selectedKategori; }
-            set { _selectedKategori = value; }
+            set
+            {   CheckKategori(value);
+                _selectedKategori = value;
+            }
         }
     }
 }
