@@ -18,6 +18,7 @@ namespace TuristAppV4._1.ViewModel
         private double _breddegrad;
         private double _laengdegrad;
         private Katagori _selectedKategori;
+        private MainViewModel _mainViewModel;
 
         public async void TilfoejRestaurant()       
         {
@@ -42,6 +43,21 @@ namespace TuristAppV4._1.ViewModel
                 MessageDialog bedoemmelsefejl = new MessageDialog("Vælg en Bedoemmelse", "Ups! Der skete en fejl!");
                 await bedoemmelsefejl.ShowAsync();
             }
+            else if (String.IsNullOrEmpty(_beskrivelse))
+            {
+                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen skal være udfyldt", "Ups! Der skete en fejl!");
+                await beskrivelsefejl.ShowAsync();
+            }
+            else if (_beskrivelse.Length <= 20)
+            {
+                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen skal være mindst 20 tegn", "Ups! Der skete en fejl!");
+                await beskrivelsefejl.ShowAsync();
+            }
+            else if (_beskrivelse.Length >= 500)
+            {
+                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen må højest bestå af 500 tegn", "Ups! Der skete en fejl!");
+                await beskrivelsefejl.ShowAsync();
+            }
             else if (String.IsNullOrEmpty(_telefon))
             {
                 MessageDialog telefonfejl = new MessageDialog("Telefonnumeret skal være udfyldt", "Ups! Der skete en fejl!");
@@ -52,32 +68,33 @@ namespace TuristAppV4._1.ViewModel
                 MessageDialog telefonfejl = new MessageDialog("Telefonnumeret skal bestå af 8 tegn", "Ups! Der skete en fejl!");
                 await telefonfejl.ShowAsync();
             }
-            else if (String.IsNullOrEmpty(_beskrivelse))
+            else if (_breddegrad <= 0.0)
             {
-                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen skal være udfyldt", "Ups! Der skete en fejl!");
-                await beskrivelsefejl.ShowAsync();
+                MessageDialog breddegradfejl = new MessageDialog("Breddegrad skal være større end 0", "Ups! Der skete en fejl!");
+                await breddegradfejl.ShowAsync();
             }
-            else if (_beskrivelse.Length >= 500)
+            else if (_laengdegrad <= 0.0)
             {
-                MessageDialog beskrivelsefejl = new MessageDialog("Beskrivelsen må højest bestå af 500 tegn", "Ups! Der skete en fejl!");
-                await beskrivelsefejl.ShowAsync();
+                MessageDialog laengdegradfejl = new MessageDialog("Længdegrad skal være større end 0", "Ups! Der skete en fejl!");
+                await laengdegradfejl.ShowAsync();
             }
             else if (_selectedKategori == null)
             {
-                MessageDialog beskrivelsefejl = new MessageDialog("Vælg en kategori");
-                await beskrivelsefejl.ShowAsync();
+                MessageDialog kategorifejl = new MessageDialog("Vælg en kategori", "Ups! Der skete en fejl!");
+                await kategorifejl.ShowAsync();
             }
             else
             {
                 Restaurant r = new Restaurant(_restaurantNavn, _bedoemmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _breddegrad, _laengdegrad);
                 SelectedKategori.ListeAfRestauranter.Add(r);
+                SavePersonsAsync();
             }
         }
         public void CheckRestaurantNavn(string restaurantNavn)
         {
             if (String.IsNullOrEmpty(restaurantNavn) || restaurantNavn.Length >= 30 || restaurantNavn.Length < 2)
             {
-                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");   
+                throw new ArgumentException("Restaurantnavnet er null, tomt eller over 30 tegn");
             }
         }
 
@@ -125,14 +142,51 @@ namespace TuristAppV4._1.ViewModel
             }
         }
 
+        public TilfoejRestaurantHandler(MainViewModel mainViewModel)
+        {
+            _mainViewModel = mainViewModel;
+        }
 
+        public async void SavePersonsAsync()
+        {
+            PersistenceFacade.SavePersonsAsJsonAsync(_mainViewModel.SamlingAfKategorier);
+        }
+
+        public async void LoadPersonsAsync()
+        {
+            ObservableCollection<ObservableCollection<Restaurant>> _collectionOfCollectionOfRestaurants = await PersistenceFacade.LoadPersonsFromJsonAsync();
+            _mainViewModel.Kategori1.Clear();
+            _mainViewModel.Kategori2.Clear();
+            _mainViewModel.Kategori3.Clear();
+            ObservableCollection<Restaurant> _katalog1 = (ObservableCollection<Restaurant>)_collectionOfCollectionOfRestaurants[0];
+            ObservableCollection<Restaurant> _katalog2 = (ObservableCollection<Restaurant>)_collectionOfCollectionOfRestaurants[1];
+            ObservableCollection<Restaurant> _katalog3 = (ObservableCollection<Restaurant>)_collectionOfCollectionOfRestaurants[2];
+
+            foreach (var restaurant in _katalog1)
+            {
+                _mainViewModel.Kategori1.Add(restaurant);
+            }
+            foreach (var restaurant in _katalog2)
+            {
+                _mainViewModel.Kategori2.Add(restaurant);
+            }
+            foreach (var restaurant in _katalog3)
+            {
+                _mainViewModel.Kategori3.Add(restaurant);
+            }
+        }
+
+        public TilfoejRestaurantHandler()
+        {
+
+        }
 
         public string RestaurantNavn
         {
             get { return _restaurantNavn; }
             set
             {
-                CheckRestaurantNavn(value);
+               CheckRestaurantNavn(value);
                 _restaurantNavn = value;
             }
         }
@@ -142,7 +196,7 @@ namespace TuristAppV4._1.ViewModel
             get { return _bedoemmelse; }
             set
             {
-                CheckBedoemmelse(value);
+               CheckBedoemmelse(value);
                 _bedoemmelse = value;
             }
         }
@@ -168,7 +222,7 @@ namespace TuristAppV4._1.ViewModel
             get { return _beskrivelse; }
             set
             {
-                CheckBeskrivelse(value);
+               CheckBeskrivelse(value);
                 _beskrivelse = value;
             }
         }
@@ -184,7 +238,7 @@ namespace TuristAppV4._1.ViewModel
             get { return _breddegrad; }
             set
             {
-                CheckBreddegrad(value);
+               CheckBreddegrad(value);
                 _breddegrad = value;
             }
         }
@@ -203,9 +257,10 @@ namespace TuristAppV4._1.ViewModel
         {
             get { return _selectedKategori; }
             set
-            {   CheckKategori(value);
+            {  CheckKategori(value);
                 _selectedKategori = value;
             }
         }
+
     }
 }
