@@ -102,9 +102,9 @@ namespace TuristAppV4._1.ViewModel
                 {
                     Kategori3.Remove(SelectedRestaurant);
                 }
-                //MessageDialog slet = new MessageDialog("Du har nu slettet en restaurant fra den valgte kategori. Tryk på knappen for at lukke denne notifikation.", "Bemærk! Restaurant blev slettet fra kategorien");
-                //slet.Commands.Add(new UICommand("Luk notifikation"));
-                //await slet.ShowAsync();
+                MessageDialog slet = new MessageDialog("Du har nu slettet en restaurant fra den valgte kategori. Tryk på knappen for at lukke denne notifikation.", "Bemærk! Restaurant blev slettet fra kategorien");
+                slet.Commands.Add(new UICommand("Luk notifikation"));
+                await slet.ShowAsync();
                 _tilfoejRestaurantHandler.SavePersonsAsync();
             }
 
