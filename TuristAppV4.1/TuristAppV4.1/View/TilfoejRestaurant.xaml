@@ -87,7 +87,7 @@
             <ComboBox PlaceholderText="Vælg en kategori" ItemsSource="{Binding KategoriKatalog}" SelectedItem="{Binding TilfoejRestaurantHandler.SelectedKategori, Mode=TwoWay}" Margin="40,0,40,0" Grid.Row="8" Grid.ColumnSpan="2"/>
 
             <Button Content="Tilføj restaurant" Command="{Binding TilfoejRestaurantCommand}" Grid.Row="9" HorizontalAlignment="Stretch" Margin="40,10,40,126" VerticalAlignment="Stretch" Background="#FF444444" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-            <ListBox Width="300" ItemsSource="{Binding Kategori2}" Grid.Row="10" Margin="533,0" Grid.ColumnSpan="2"/>
+            <!--<ListBox Width="300" ItemsSource="{Binding Kategori2}" Grid.Row="10" Margin="533,0" Grid.ColumnSpan="2"/>-->
             
             
         </Grid>

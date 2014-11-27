@@ -85,9 +85,19 @@ namespace TuristAppV4._1.ViewModel
             }
             else
             {
-                Restaurant r = new Restaurant(_restaurantNavn, _bedoemmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _breddegrad, _laengdegrad);
-                SelectedKategori.ListeAfRestauranter.Add(r);
-                SavePersonsAsync();
+                if (String.IsNullOrEmpty(_billede))
+                {
+                    Restaurant r = new Restaurant(_restaurantNavn, _bedoemmelse, _hjemmeside, _beskrivelse, _telefon, "../Assets/noimage.png", _breddegrad, _laengdegrad);
+                    SelectedKategori.ListeAfRestauranter.Add(r);
+                    SavePersonsAsync();
+                }
+                else
+                {
+                    Restaurant r = new Restaurant(_restaurantNavn, _bedoemmelse, _hjemmeside, _beskrivelse, _telefon, _billede, _breddegrad, _laengdegrad);
+                    SelectedKategori.ListeAfRestauranter.Add(r);
+                    SavePersonsAsync();
+                }
+
             }
         }
         public void CheckRestaurantNavn(string restaurantNavn)
